@@ -1,724 +1,795 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang='eng'>
-    
-    <head>
-        <meta charset='utf-8'>
-        <title>Linguistics</title>
-        <link type='text/css' rel='stylesheet' href="css/style.css">
-        
 
-    </head>
-    
-    <body>
-        
-        <header>
-            
-            <h1>Phoneme Chart</h1>
-
-        
-        </header>
+<head>
+    <meta charset='utf-8'>
+    <title>Phoneme Chart</title>
+    <link href="../../../css/all-pages.css" rel="stylesheet">
+    <link href="css/style.css" rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+</head>
 
-        <section style="display:none;" id="audio">
-            <!----------------------
+<body>
+
+    <header>
+        <div class="navigation">
+            <div class="navigation__back">
+                &nbsp;
+            </div>
+            <a href="../../../../" id="page-title" class="navigation__title">
+                CromBlog
+            </a>
+            <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+
+            <label for="navigation-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="../../../about/" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="../../../blog/" class="navigation__link">Blog</a></li>
+                    <li class="navigation__item"><a href="../../../contact/" class="navigation__link">Contact</a></li>
+                    <li class="navigation__item"><a href="../../../web-development-portfolio/"
+                            class="navigation__link">Web
+                            Development Portfolio</a></li>
+                    <li class="navigation__item"><a href="../../../writing-portfolio/" class="navigation__link">Writing
+                            Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <section style="display:none;" id="audio">
+        <!----------------------
                 VOWEL SOUNDS
             ----------------------->
-            <audio id="Close_front_unrounded_vowel" controls>
-                <source  src="audio/Close_front_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close_front_rounded_vowel" controls>
-                <source  src="audio/Close_front_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close_central_unrounded_vowel" controls>
-                <source  src="audio/Close_central_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close_central_rounded_vowel" controls>
-                <source  src="audio/Close_central_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close_back_unrounded_vowel" controls>
-                <source  src="audio/Close_back_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close_back_rounded_vowel" controls>
-                <source  src="audio/Close_back_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Near-close_near-front_unrounded_vowel" controls>
-                <source  src="audio/Near-close_near-front_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Near-close_near-front_rounded_vowel" controls>
-                <source  src="audio/Near-close_near-front_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Near-close_near-back_rounded_vowel" controls>
-                <source  src="audio/Near-close_near-back_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close-mid_front_unrounded_vowel" controls>
-                <source  src="audio/Close-mid_front_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close-mid_front_rounded_vowel" controls>
-                <source  src="audio/Close-mid_front_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close-mid_central_unrounded_vowel" controls>
-                <source  src="audio/Close-mid_central_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close-mid_central_rounded_vowel" controls>
-                <source  src="audio/Close-mid_central_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close-mid_back_unrounded_vowel" controls>
-                <source  src="audio/Close-mid_back_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Close-mid_back_rounded_vowel" controls>
-                <source  src="audio/Close-mid_back_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Mid-central_vowel" controls>
-                <source  src="audio/Mid-central_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open-mid_front_unrounded_vowel" controls>
-                <source  src="audio/Open-mid_front_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open-mid_front_rounded_vowel" controls>
-                <source  src="audio/Open-mid_front_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open-mid_central_unrounded_vowel" controls>
-                <source  src="audio/Open-mid_central_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open-mid_central_rounded_vowel" controls>
-                <source  src="audio/Open-mid_central_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open-mid_back_unrounded_vowel2" controls>
-                <source  src="audio/Open-mid_back_unrounded_vowel2.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open-mid_back_rounded_vowel" controls>
-                <source  src="audio/Open-mid_back_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Near-open_front_unrounded_vowel" controls>
-                <source  src="audio/Near-open_front_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Near-open_central_unrounded_vowel" controls>
-                <source  src="audio/Near-open_central_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open_front_unrounded_vowel" controls>
-                <source  src="audio/Open_front_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open_front_rounded_vowel" controls>
-                <source  src="audio/Open_front_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open_back_unrounded_vowel" controls>
-                <source  src="audio/Open_back_unrounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Open_back_rounded_vowel" controls>
-                <source  src="audio/Open_back_rounded_vowel.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!----------------------
+        <audio id="Close_front_unrounded_vowel" controls>
+            <source src="audio/Close_front_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close_front_rounded_vowel" controls>
+            <source src="audio/Close_front_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close_central_unrounded_vowel" controls>
+            <source src="audio/Close_central_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close_central_rounded_vowel" controls>
+            <source src="audio/Close_central_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close_back_unrounded_vowel" controls>
+            <source src="audio/Close_back_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close_back_rounded_vowel" controls>
+            <source src="audio/Close_back_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Near-close_near-front_unrounded_vowel" controls>
+            <source src="audio/Near-close_near-front_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Near-close_near-front_rounded_vowel" controls>
+            <source src="audio/Near-close_near-front_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Near-close_near-back_rounded_vowel" controls>
+            <source src="audio/Near-close_near-back_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close-mid_front_unrounded_vowel" controls>
+            <source src="audio/Close-mid_front_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close-mid_front_rounded_vowel" controls>
+            <source src="audio/Close-mid_front_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close-mid_central_unrounded_vowel" controls>
+            <source src="audio/Close-mid_central_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close-mid_central_rounded_vowel" controls>
+            <source src="audio/Close-mid_central_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close-mid_back_unrounded_vowel" controls>
+            <source src="audio/Close-mid_back_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Close-mid_back_rounded_vowel" controls>
+            <source src="audio/Close-mid_back_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Mid-central_vowel" controls>
+            <source src="audio/Mid-central_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open-mid_front_unrounded_vowel" controls>
+            <source src="audio/Open-mid_front_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open-mid_front_rounded_vowel" controls>
+            <source src="audio/Open-mid_front_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open-mid_central_unrounded_vowel" controls>
+            <source src="audio/Open-mid_central_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open-mid_central_rounded_vowel" controls>
+            <source src="audio/Open-mid_central_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open-mid_back_unrounded_vowel2" controls>
+            <source src="audio/Open-mid_back_unrounded_vowel2.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open-mid_back_rounded_vowel" controls>
+            <source src="audio/Open-mid_back_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Near-open_front_unrounded_vowel" controls>
+            <source src="audio/Near-open_front_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Near-open_central_unrounded_vowel" controls>
+            <source src="audio/Near-open_central_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open_front_unrounded_vowel" controls>
+            <source src="audio/Open_front_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open_front_rounded_vowel" controls>
+            <source src="audio/Open_front_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open_back_unrounded_vowel" controls>
+            <source src="audio/Open_back_unrounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Open_back_rounded_vowel" controls>
+            <source src="audio/Open_back_rounded_vowel.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!----------------------
                 CONSONANT SOUNDS
             ----------------------->
-            <!-- PLOSIVE CONSONANTS -->
-            <audio id="Voiceless_bilabial_plosive" controls>
-                <source  src="audio/Voiceless_bilabial_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_bilabial_plosive" controls>
-                <source  src="audio/Voiced_bilabial_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_alveolar_plosive" controls>
-                <source  src="audio/Voiceless_alveolar_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_alveolar_plosive" controls>
-                <source  src="audio/Voiced_alveolar_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_alveolar_sibilant_affricate" controls>
-                <source  src="audio/Voiceless_alveolar_sibilant_affricate.oga" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_alveolar_sibilant_affricate" controls>
-                <source  src="audio/Voiced_alveolar_sibilant_affricate.oga" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_retroflex_stop" controls>
-                <source  src="audio/Voiceless_retroflex_stop.oga" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_retroflex_stop" controls>
-                <source  src="audio/Voiced_retroflex_stop.oga" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_retroflex_sibilant" controls>
-                <source  src="audio/Voiceless_retroflex_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_retroflex_sibilant" controls>
-                <source  src="audio/Voiced_retroflex_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_palatal_plosive" controls>
-                <source  src="audio/Voiceless_palatal_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_alveolo-palatal_affricate" controls>
-                <source  src="audio/Voiceless_alveolo-palatal_affricate.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_palatal_plosive" controls>
-                <source  src="audio/Voiced_palatal_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_alveolo-palatal_affricate" controls>
-                <source  src="audio/Voiced_alveolo-palatal_affricate.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
+        <!-- PLOSIVE CONSONANTS -->
+        <audio id="Voiceless_bilabial_plosive" controls>
+            <source src="audio/Voiceless_bilabial_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_bilabial_plosive" controls>
+            <source src="audio/Voiced_bilabial_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_alveolar_plosive" controls>
+            <source src="audio/Voiceless_alveolar_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_alveolar_plosive" controls>
+            <source src="audio/Voiced_alveolar_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_alveolar_sibilant_affricate" controls>
+            <source src="audio/Voiceless_alveolar_sibilant_affricate.oga" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_alveolar_sibilant_affricate" controls>
+            <source src="audio/Voiced_alveolar_sibilant_affricate.oga" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_retroflex_stop" controls>
+            <source src="audio/Voiceless_retroflex_stop.oga" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_retroflex_stop" controls>
+            <source src="audio/Voiced_retroflex_stop.oga" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_retroflex_sibilant" controls>
+            <source src="audio/Voiceless_retroflex_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_retroflex_sibilant" controls>
+            <source src="audio/Voiced_retroflex_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_palatal_plosive" controls>
+            <source src="audio/Voiceless_palatal_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_alveolo-palatal_affricate" controls>
+            <source src="audio/Voiceless_alveolo-palatal_affricate.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_palatal_plosive" controls>
+            <source src="audio/Voiced_palatal_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_alveolo-palatal_affricate" controls>
+            <source src="audio/Voiced_alveolo-palatal_affricate.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
 
-            <audio id="Voiceless_velar_plosive" controls>
-                <source  src="audio/Voiceless_velar_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_velar_plosive_02" controls>
-                <source  src="audio/Voiced_velar_plosive_02.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_uvular_plosive" controls>
-                <source  src="audio/Voiceless_uvular_plosive.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_uvular_stop" controls>
-                <source  src="audio/Voiced_uvular_stop.oga" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Epiglottal_stop" controls>
-                <source  src="audio/Epiglottal_stop.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Glottal_stop" controls>
-                <source  src="audio/Glottal_stop.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!-- NASAL CONSONANTS -->
-            <audio id="Bilabial_nasal" controls>
-                <source  src="audio/Bilabial_nasal.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Labiodental_nasal" controls>
-                <source  src="audio/Labiodental_nasal.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Alveolar_nasal" controls>
-                <source  src="audio/Alveolar_nasal.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Retroflex_nasal" controls>
-                <source  src="audio/Retroflex_nasal.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Palatal_nasal" controls>
-                <source  src="audio/Palatal_nasal.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Velar_nasal" controls>
-                <source  src="audio/Velar_nasal.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Uvular_nasal" controls>
-                <source  src="audio/Uvular_nasal.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!-- TRILL -->
-            <audio id="Voiceless_bilabial_trill_with_aspiration" controls>
-                <source  src="audio/Voiceless_bilabial_trill_with_aspiration.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Bilabial_trill" controls>
-                <source  src="audio/Bilabial_trill.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_alveolar_trill" controls>
-                <source  src="audio/Voiceless_alveolar_trill.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Alveolar_trill" controls>
-                <source  src="audio/Alveolar_trill.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_uvular_trill" controls>
-                <source  src="audio/Voiceless_uvular_trill.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Uvular_trill" controls>
-                <source  src="audio/Uvular_trill.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_epiglottal_trill" controls>
-                <source  src="audio/Voiceless_epiglottal_trill.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!-- FLAP -->
-            <audio id="Labiodental_flap" controls>
-                <source  src="audio/Labiodental_flap.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Alveolar_lateral_flap" controls>
-                <source  src="audio/Alveolar_lateral_flap.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Alveolar_tap" controls>
-                <source  src="audio/Alveolar_tap.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Retroflex_flap" controls>
-                <source  src="audio/Retroflex_flap.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Epiglottal_flap" controls>
-                <source  src="audio/Epiglottal_flap.oga" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!-- FRICATIVES -->
-            <audio id="Voiceless_bilabial_fricative" controls>
-                <source  src="audio/Voiceless_bilabial_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_bilabial_fricative" controls>
-                <source  src="audio/Voiced_bilabial_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_labiodental_fricative" controls>
-                <source  src="audio/Voiceless_labiodental_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_labiodental_fricative" controls>
-                <source  src="audio/Voiced_labiodental_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_dental_fricative" controls>
-                <source  src="audio/Voiceless_dental_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_dental_fricative" controls>
-                <source  src="audio/Voiced_dental_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_alveolar_sibilant" controls>
-                <source  src="audio/Voiceless_alveolar_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_alveolar_sibilant" controls>
-                <source  src="audio/Voiced_alveolar_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_palato-alveolar_sibilant" controls>
-                <source  src="audio/Voiceless_palato-alveolar_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_palato-alveolar_sibilant" controls>
-                <source  src="audio/Voiced_palato-alveolar_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_retroflex_sibilant" controls>
-                <source  src="audio/Voiceless_retroflex_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_retroflex_sibilant" controls>
-                <source  src="audio/Voiced_retroflex_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_palatal_fricative" controls>
-                <source  src="audio/Voiceless_palatal_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_palatal_fricative" controls>
-                <source  src="audio/Voiced_palatal_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_alveolo-palatal_sibilant" controls>
-                <source  src="audio/Voiceless_alveolo-palatal_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_alveolo-palatal_sibilant" controls>
-                <source  src="audio/Voiced_alveolo-palatal_sibilant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_velar_fricative" controls>
-                <source  src="audio/Voiceless_velar_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_velar_fricative" controls>
-                <source  src="audio/Voiced_velar_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_uvular_fricative" controls>
-                <source  src="audio/Voiceless_uvular_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_uvular_fricative" controls>
-                <source  src="audio/Voiced_uvular_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_pharyngeal_fricative" controls>
-                <source  src="audio/Voiceless_pharyngeal_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_pharyngeal_fricative" controls>
-                <source  src="audio/Voiced_pharyngeal_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_glottal_fricative" controls>
-                <source  src="audio/Voiceless_glottal_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_glottal_fricative" controls>
-                <source  src="audio/Voiced_glottal_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!-- LATERAL FRICATIVES -->
-            <audio id="Voiceless_alveolar_lateral_fricative" controls>
-                <source  src="audio/Voiceless_alveolar_lateral_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_alveolar_lateral_fricative" controls>
-                <source  src="audio/Voiced_alveolar_lateral_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_retroflex_lateral_fricative" controls>
-                <source  src="audio/Voiceless_retroflex_lateral_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_palatal_lateral_fricative" controls>
-                <source  src="audio/Voiceless_palatal_lateral_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_velar_lateral_fricative" controls>
-                <source  src="audio/Voiceless_velar_lateral_fricative.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!-- APPROXIMANTS -->
-            <audio id="Labiodental_approximant" controls>
-                <source  src="audio/Labiodental_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Alveolar_approximant" controls>
-                <source  src="audio/Alveolar_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Retroflex_approximant" controls>
-                <source  src="audio/Retroflex_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Palatal_approximant" controls>
-                <source  src="audio/Palatal_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_velar_approximant" controls>
-                <source  src="audio/Voiced_velar_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <!-- LATERAL APPROXIMANTS -->
-            <audio id="Alveolar_lateral_approximant" controls>
-                <source  src="audio/Alveolar_lateral_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Retroflex_lateral_approximant" controls>
-                <source  src="audio/Retroflex_lateral_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Palatal_lateral_approximant" controls>
-                <source  src="audio/Palatal_lateral_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Velar_lateral_approximant" controls>
-                <source  src="audio/Velar_lateral_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Uvular_lateral_approximant" controls>
-                <source  src="audio/Uvular_lateral_approximant.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
+        <audio id="Voiceless_velar_plosive" controls>
+            <source src="audio/Voiceless_velar_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_velar_plosive_02" controls>
+            <source src="audio/Voiced_velar_plosive_02.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_uvular_plosive" controls>
+            <source src="audio/Voiceless_uvular_plosive.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_uvular_stop" controls>
+            <source src="audio/Voiced_uvular_stop.oga" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Epiglottal_stop" controls>
+            <source src="audio/Epiglottal_stop.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Glottal_stop" controls>
+            <source src="audio/Glottal_stop.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- NASAL CONSONANTS -->
+        <audio id="Bilabial_nasal" controls>
+            <source src="audio/Bilabial_nasal.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Labiodental_nasal" controls>
+            <source src="audio/Labiodental_nasal.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Alveolar_nasal" controls>
+            <source src="audio/Alveolar_nasal.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Retroflex_nasal" controls>
+            <source src="audio/Retroflex_nasal.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Palatal_nasal" controls>
+            <source src="audio/Palatal_nasal.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Velar_nasal" controls>
+            <source src="audio/Velar_nasal.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Uvular_nasal" controls>
+            <source src="audio/Uvular_nasal.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- TRILL -->
+        <audio id="Voiceless_bilabial_trill_with_aspiration" controls>
+            <source src="audio/Voiceless_bilabial_trill_with_aspiration.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Bilabial_trill" controls>
+            <source src="audio/Bilabial_trill.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_alveolar_trill" controls>
+            <source src="audio/Voiceless_alveolar_trill.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Alveolar_trill" controls>
+            <source src="audio/Alveolar_trill.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_uvular_trill" controls>
+            <source src="audio/Voiceless_uvular_trill.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Uvular_trill" controls>
+            <source src="audio/Uvular_trill.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_epiglottal_trill" controls>
+            <source src="audio/Voiceless_epiglottal_trill.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- FLAP -->
+        <audio id="Labiodental_flap" controls>
+            <source src="audio/Labiodental_flap.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Alveolar_lateral_flap" controls>
+            <source src="audio/Alveolar_lateral_flap.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Alveolar_tap" controls>
+            <source src="audio/Alveolar_tap.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Retroflex_flap" controls>
+            <source src="audio/Retroflex_flap.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Epiglottal_flap" controls>
+            <source src="audio/Epiglottal_flap.oga" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- FRICATIVES -->
+        <audio id="Voiceless_bilabial_fricative" controls>
+            <source src="audio/Voiceless_bilabial_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_bilabial_fricative" controls>
+            <source src="audio/Voiced_bilabial_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_labiodental_fricative" controls>
+            <source src="audio/Voiceless_labiodental_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_labiodental_fricative" controls>
+            <source src="audio/Voiced_labiodental_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_dental_fricative" controls>
+            <source src="audio/Voiceless_dental_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_dental_fricative" controls>
+            <source src="audio/Voiced_dental_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_alveolar_sibilant" controls>
+            <source src="audio/Voiceless_alveolar_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_alveolar_sibilant" controls>
+            <source src="audio/Voiced_alveolar_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_palato-alveolar_sibilant" controls>
+            <source src="audio/Voiceless_palato-alveolar_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_palato-alveolar_sibilant" controls>
+            <source src="audio/Voiced_palato-alveolar_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_retroflex_sibilant" controls>
+            <source src="audio/Voiceless_retroflex_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_retroflex_sibilant" controls>
+            <source src="audio/Voiced_retroflex_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_palatal_fricative" controls>
+            <source src="audio/Voiceless_palatal_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_palatal_fricative" controls>
+            <source src="audio/Voiced_palatal_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_alveolo-palatal_sibilant" controls>
+            <source src="audio/Voiceless_alveolo-palatal_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_alveolo-palatal_sibilant" controls>
+            <source src="audio/Voiced_alveolo-palatal_sibilant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_velar_fricative" controls>
+            <source src="audio/Voiceless_velar_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_velar_fricative" controls>
+            <source src="audio/Voiced_velar_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_uvular_fricative" controls>
+            <source src="audio/Voiceless_uvular_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_uvular_fricative" controls>
+            <source src="audio/Voiced_uvular_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_pharyngeal_fricative" controls>
+            <source src="audio/Voiceless_pharyngeal_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_pharyngeal_fricative" controls>
+            <source src="audio/Voiced_pharyngeal_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_glottal_fricative" controls>
+            <source src="audio/Voiceless_glottal_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_glottal_fricative" controls>
+            <source src="audio/Voiced_glottal_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- LATERAL FRICATIVES -->
+        <audio id="Voiceless_alveolar_lateral_fricative" controls>
+            <source src="audio/Voiceless_alveolar_lateral_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_alveolar_lateral_fricative" controls>
+            <source src="audio/Voiced_alveolar_lateral_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_retroflex_lateral_fricative" controls>
+            <source src="audio/Voiceless_retroflex_lateral_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_palatal_lateral_fricative" controls>
+            <source src="audio/Voiceless_palatal_lateral_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_velar_lateral_fricative" controls>
+            <source src="audio/Voiceless_velar_lateral_fricative.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- APPROXIMANTS -->
+        <audio id="Labiodental_approximant" controls>
+            <source src="audio/Labiodental_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Alveolar_approximant" controls>
+            <source src="audio/Alveolar_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Retroflex_approximant" controls>
+            <source src="audio/Retroflex_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Palatal_approximant" controls>
+            <source src="audio/Palatal_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_velar_approximant" controls>
+            <source src="audio/Voiced_velar_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- LATERAL APPROXIMANTS -->
+        <audio id="Alveolar_lateral_approximant" controls>
+            <source src="audio/Alveolar_lateral_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Retroflex_lateral_approximant" controls>
+            <source src="audio/Retroflex_lateral_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Palatal_lateral_approximant" controls>
+            <source src="audio/Palatal_lateral_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Velar_lateral_approximant" controls>
+            <source src="audio/Velar_lateral_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Uvular_lateral_approximant" controls>
+            <source src="audio/Uvular_lateral_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
 
-            <!-- WHERE TO CATEGORIZE THESE AFFRICATES? -->
-            <audio id="Voiceless_palato-alveolar_affricate" con trols>
-                <source  src="audio/Voiceless_palato-alveolar_affricate.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_palato-alveolar_affricate" controls>
-                <source  src="audio/Voiced_palato-alveolar_affricate.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiceless_retroflex_affricate" controls>
-                <source  src="audio/Voiceless_retroflex_affricate.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
-            <audio id="Voiced_retroflex_affricate" controls>
-                <source  src="audio/Voiced_retroflex_affricate.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-            </audio>
+        <!-- WHERE TO CATEGORIZE THESE AFFRICATES? -->
+        <audio id="Voiceless_palato-alveolar_affricate" con trols>
+            <source src="audio/Voiceless_palato-alveolar_affricate.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_palato-alveolar_affricate" controls>
+            <source src="audio/Voiced_palato-alveolar_affricate.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiceless_retroflex_affricate" controls>
+            <source src="audio/Voiceless_retroflex_affricate.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Voiced_retroflex_affricate" controls>
+            <source src="audio/Voiced_retroflex_affricate.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
 
+    <div id="display-container">
+        <div id="left-display">
 
-            
-
-        </section>
-        
-        <section class='language-option-section'>
-            <div class='language-options'>
-                <div class='language-option'>
-                  <input type='radio' id='ipa-radio' name='language-options' onclick='display()' checked>
-                  <label>International Phonetic Alphabet</label>
+            <h2 class="option-title">Select Language</h2>
+            <div id='language-options-radios' class="radio-options">
+                <div class='language-option-radio'>
+                    <input type='radio' id='ipa-radio' name='language-options' onclick='display()' checked>
+                    <!-- <label>International Phonetic Alphabet</label> -->
                 </div>
 
-                <div class='language-option'>
-                  <input type='radio' id='english-radio' name='language-options' onclick='display()'>
-                  <label>English</label>
+                <div class='language-option-radio'>
+                    <input type='radio' id='english-radio' name='language-options' onclick='display()'>
+                    <!-- <label>English</label> -->
                 </div>
 
-                <div class='language-option'>
-                  <input type='radio' id='chinese-radio' name='language-options' onclick='display()'>
-                  <label>Chinese</label>
+                <div class='language-option-radio'>
+                    <input type='radio' id='chinese-radio' name='language-options' onclick='display()'>
+                    <!-- <label>Chinese</label> -->
                 </div>
 
             </div>
 
-        </section>
-        
-        <!-- 
+            <div id='language-options-buttons' class="button-options">
+                <button id="ipa-button" class="option-button"
+                    onclick="document.getElementById('ipa-radio').checked=true; display();">IPA</button>
+                <button id="english-button" class="option-button"
+                    onclick="document.getElementById('english-radio').checked=true; display();">English</button>
+                <button id="chinese-button" class="option-button"
+                    onclick="document.getElementById('chinese-radio').checked=true; display();">Chinese</button>
+            </div>
+
+            <h2 class="option-title">Select Phoneme Category</h2>
+            <div id="phoneme-category-options-radios" class="radio-options">
+                <div class='phoneme-option'>
+                    <input type='radio' id='consonants-radio' name='phoneme-options' onclick='display()' checked>
+                    <!-- <label>Consonants</label> -->
+                </div>
+
+                <div class='phoneme-option'>
+                    <input type='radio' id='vowels-radio' name='phoneme-options' onclick='display()'>
+                    <!-- <label>Vowels</label> -->
+                </div>
+
+            </div>
+
+            <div id='phoneme-category-options-buttons' class="button-options">
+                <button id="consonants-button" class="option-button"
+                    onclick="document.getElementById('consonants-radio').checked=true; display();">Consonants</button>
+                <button id="vowels-button" class="option-button"
+                    onclick="document.getElementById('vowels-radio').checked=true; display();">Vowels</button>
+            </div>
+
+        </div>
+        <div id="right-display">
+
+            <div id="chart-container">
+                <!-- 
             VOWELS
-         -->
-        <section class='vowels-section'>
-            
-            <h2>Vowels</h2>
-            
-            <div class='vowels-table'>
-                
-                <table>
-                    <tr>
-                        <th></th>
-                        <th>Frontest</th>
-                        <th>Fronter</th>
-                        <th>Front Center</th>
-                        <th>Center</th>
-                        <th>Back Center</th>
-                        <th>Backer</th>
-                        <th>Backest</th>
-                    
-                    </tr>
-                    
-                    <tr>
-                        <th>Closest</th>
-                        <td>
-                            <button onclick="document.getElementById('Close_front_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>i</div>
-                                <div class='english vowel'>ee</div>
-                                <div class='chinese vowel'>i</div>
-                                <span class='tooltiptext'>
-                                    Close Front Unrounded Vowel<br>
-                                    i<br>
-                                    thr<strong>ee</strong><br>
-                                    一<br>
-                                </span>
-                            </button>
-                            <button onclick="document.getElementById('Close_front_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>y</div>
+             -->
+                <div id="vowels" class='phoneme-category'>
+
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Frontest</th>
+                            <th>Fronter</th>
+                            <th>Front Center</th>
+                            <th>Center</th>
+                            <th>Back Center</th>
+                            <th>Backer</th>
+                            <th>Backest</th>
+
+                        </tr>
+
+                        <tr>
+                            <th>Closest</th>
+                            <td>
+                                <div onclick="document.getElementById('Close_front_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                    class="phoneme tooltip">
+                                    <div class='ipa vowel'>i</div>
+                                    <div class='english vowel'>ee</div>
+                                    <div class='chinese vowel'>i</div>
+                                    <span class='tooltiptext'>
+                                        Close Front Unrounded Vowel<br>
+                                        i<br>
+                                        thr<strong>ee</strong><br>
+                                        一<br>
+                                    </span>
+                                </div>
+                                <div onclick="document.getElementById('Close_front_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                    class="phoneme tooltip"'>
+                                <div class=' ipa vowel'>y</div>
                                 <div class='chinese vowel'>yu/ü</div>
                                 <span class='tooltiptext'>
                                     Close Front Rounded Vowel<br>
                                     y<br>
                                     雨<br>
                                 </span>
-                            </button>
-                            
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Close_central_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɨ</div>
-                                <span class='tooltiptext'>
-                                    Close Central Unrounded Vowel<br>
-                                    ɨ
-                                </span>
-                            </button>
-                            <button onclick="document.getElementById('Close_central_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ʉ</div>
-                                <span class='tooltiptext'>
-                                    Close Central Rounded Vowel<br>
-                                    ʉ
-                                </span>
-                            
-                            </button>
-                            
-                        
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Close_back_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɯ</div>
-                                <span class='tooltiptext'>
-                                    Close Back Unrounded Vowel<br>
-                                    ɯ 
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Close_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>u</div>
-                                <div class='english vowel'>ue</div>
-                                <div class='chinese vowel'>w<strong>u</strong>/<strong>u</strong></div>
-                                <span class='tooltiptext'>
-                                    Close Back Rounded Vowel<br>
-                                    u<br>
-                                    f<strong>oo</strong>d<br>
-                                    土<br>
-                                </span>
-                            </div>
-                        </td>
-                    
-                    </tr>
-                    
-                    <tr>
-                        <th>Close</th>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Near-close_near-front_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>I</div>
-                                <div class='english vowel'>i</div>
-                                <span class='tooltiptext'>
-                                    Near-close Front Unrounded Vowel<br>
-                                    I<br>
-                                    s<strong>i</strong>t
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Near-close_near-front_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ʏ</div>
-                                <span class='tooltiptext'>
-                                    Near-close Front Rounded Vowel<br>
-                                    ʏ
-                                </span>
-                            </div>
-                            
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Near-close_near-back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ʊ</div>
-                                <div class='english vowel'>u</div>
-                                <div class='chinese vowel'><strong>o</strong>ng</div>
-                                <span class='tooltiptext'>
-                                    Near-close Back Rounded Vowel<br>
-                                    ʊ<br>
-                                    b<strong>u</strong>ll<br>
-                                    冬, 用
-                                </span>
-                            </div>
-                        </td>
-                        <td></td>
-                    </tr>
-                    
-                    <tr>
-                        <th>Close-mid</th>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Close-mid_front_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>e</div>
-                                <div class='english vowel'>eigh</div>
-                                <div class='chinese vowel'>y<strong>e</strong>/-i<strong>e</strong>, yu<strong>e</strong>/-ü<strong>e</strong></div>
-                                <span class='tooltiptext'>
-                                    Close-mid Front Unrounded Vowel<br>
-                                    e<br>
-                                    <strong>eigh</strong>t<br>
-                                    也, 月<br>
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Close-mid_front_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ø</div>
-                                <span class='tooltiptext'>
-                                    Close-mid Front Rounded Vowel<br>
-                                    ø
-                                </span>
-                            
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Close-mid_central_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɘ</div>
-                                <span class='tooltiptext'>
-                                    Close-mid Central Unrounded Vowel<br>
-                                    ɘ
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Close-mid_central_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɵ</div>
-                                <span class='tooltiptext'>
-                                    Close-mid Central Rounded Vowel<br>
-                                    ɵ
-                                </span>
-                            
-                            </div>
-                             
-                        
-                        </td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Close-mid_back_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɤ</div>
-                                <div class='chinese vowel'>e</div>
-                                <span class='tooltiptext'>
-                                    Close-mid Back Unrounded Vowel<br>
-                                    ɤ<br>
-                                    厄,饿
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Close-mid_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>o</div>
-                                <div class='english vowel'>o</div>
-                                <div class='chinese vowel'>w<strong>o</strong>/u<strong>o</strong></div>
-                                <span class='tooltiptext'>
-                                    Close-mid Back Rounded Vowel<br>
-                                    o<br>
-                                    <strong>o</strong>ver<br>
-                                    末, 我<br>
-                                </span>
-                            </div>
-                        </td>
-                        
-                    
-                    </tr>
-                    
-                    <tr>
-                        <th>Mid</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button onclick="document.getElementById('Mid-central_vowel').play();" class='tooltip'>
+                </div>
+
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div onclick="document.getElementById('Close_central_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                        class="phoneme tooltip">
+                        <div class='ipa vowel'>ɨ</div>
+                        <span class='tooltiptext'>
+                            Close Central Unrounded Vowel<br>
+                            ɨ
+                        </span>
+                    </div>
+                    <div onclick="document.getElementById('Close_central_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                        class="phoneme tooltip">
+                        <div class='ipa vowel'>ʉ</div>
+                        <span class='tooltiptext'>
+                            Close Central Rounded Vowel<br>
+                            ʉ
+                        </span>
+
+                    </div>
+
+
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div onclick="document.getElementById('Close_back_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                        class="phoneme tooltip">
+                        <div class='ipa vowel'>ɯ</div>
+                        <span class='tooltiptext'>
+                            Close Back Unrounded Vowel<br>
+                            ɯ
+                        </span>
+                    </div>
+                    <div onclick="document.getElementById('Close_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                        <div class='ipa vowel'>u</div>
+                        <div class='english vowel'>ue</div>
+                        <div class='chinese vowel'>w<strong>u</strong>/<strong>u</strong></div>
+                        <span class='tooltiptext'>
+                            Close Back Rounded Vowel<br>
+                            u<br>
+                            f<strong>oo</strong>d<br>
+                            土<br>
+                        </span>
+                    </div>
+                </td>
+
+                </tr>
+
+                <tr>
+                    <th>Close</th>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Near-close_near-front_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>I</div>
+                            <div class='english vowel'>i</div>
+                            <span class='tooltiptext'>
+                                Near-close Front Unrounded Vowel<br>
+                                I<br>
+                                s<strong>i</strong>t
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Near-close_near-front_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ʏ</div>
+                            <span class='tooltiptext'>
+                                Near-close Front Rounded Vowel<br>
+                                ʏ
+                            </span>
+                        </div>
+
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Near-close_near-back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ʊ</div>
+                            <div class='english vowel'>u</div>
+                            <div class='chinese vowel'><strong>o</strong>ng</div>
+                            <span class='tooltiptext'>
+                                Near-close Back Rounded Vowel<br>
+                                ʊ<br>
+                                b<strong>u</strong>ll<br>
+                                冬, 用
+                            </span>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th>Close-mid</th>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Close-mid_front_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>e</div>
+                            <div class='english vowel'>eigh</div>
+                            <div class='chinese vowel'>y<strong>e</strong>/-i<strong>e</strong>,
+                                yu<strong>e</strong>/-ü<strong>e</strong></div>
+                            <span class='tooltiptext'>
+                                Close-mid Front Unrounded Vowel<br>
+                                e<br>
+                                <strong>eigh</strong>t<br>
+                                也, 月<br>
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Close-mid_front_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ø</div>
+                            <span class='tooltiptext'>
+                                Close-mid Front Rounded Vowel<br>
+                                ø
+                            </span>
+
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Close-mid_central_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɘ</div>
+                            <span class='tooltiptext'>
+                                Close-mid Central Unrounded Vowel<br>
+                                ɘ
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Close-mid_central_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɵ</div>
+                            <span class='tooltiptext'>
+                                Close-mid Central Rounded Vowel<br>
+                                ɵ
+                            </span>
+
+                        </div>
+
+
+                    </td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Close-mid_back_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɤ</div>
+                            <div class='chinese vowel'>e</div>
+                            <span class='tooltiptext'>
+                                Close-mid Back Unrounded Vowel<br>
+                                ɤ<br>
+                                厄,饿
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Close-mid_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>o</div>
+                            <div class='english vowel'>o</div>
+                            <div class='chinese vowel'>w<strong>o</strong>/u<strong>o</strong></div>
+                            <span class='tooltiptext'>
+                                Close-mid Back Rounded Vowel<br>
+                                o<br>
+                                <strong>o</strong>ver<br>
+                                末, 我<br>
+                            </span>
+                        </div>
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <th>Mid</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Mid-central_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                             <div class='ipa vowel'>ə</div>
                             <div class='english vowel'>uh/a</div>
                             <div class='chinese vowel'><strong>e</strong>n,<strong>e</strong>ng</div>
@@ -728,177 +799,186 @@
                                 <strong>a</strong>bout<br>
                                 本, 冷
                             </span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <th>Open-mid</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Open-mid_front_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɛ</div>
+                            <div class='english vowel'>e</div>
+                            <div class='chinese vowel'>
+                                y<strong>a</strong>n/-i<strong>a</strong>n/yu<strong>a</strong>n/-ü<strong>a</strong>n
                             </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                    
-                    </tr>
-                    
-                    <tr>
-                        <th>Open-mid</th>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Open-mid_front_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɛ</div>
-                                <div class='english vowel'>e</div>
-                                <div class='chinese vowel'>y<strong>a</strong>n/-i<strong>a</strong>n/yu<strong>a</strong>n/-ü<strong>a</strong>n</div>
-                                <span class='tooltiptext'>
-                                    Open-mid Front Unrounded Vowel<br>
-                                    ɛ<br>
-                                    b<strong>e</strong>t<br>
-                                    言, 元<br>
-                                </span>
-                            
-                            </div> 
-                            <button onclick="document.getElementById('Open-mid_front_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>œ</div>
-                                <span class='tooltiptext'>
-                                    Open-mid Front Rounded Vowel<br>
-                                    œ
-                                </span>
-                            
-                            </div> 
-                            
-                        </td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Open-mid_central_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɜ</div>
-                                <div class='english vowel'>ea</div>
-                                <span class='tooltiptext'>
-                                    Open-mid Central Unrounded Vowel<br>
-                                    ɜ<br>
-                                    <strong>ea</strong>rn
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Open-mid_central_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɞ</div>
-                                <span class='tooltiptext'>
-                                    Open-mid Central Rounded Vowel<br>
-                                    ɞ
-                                </span>
-                            </div>
-                          
-                        </td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Open-mid_back_unrounded_vowel2').play();" class='tooltip'>
-                                <div class='ipa vowel'>ʌ </div>
-                                <div class='english vowel'>u</div>
-                                <span class='tooltiptext'>
-                                    Open-mid Back Unrounded Vowel<br>
-                                    ʌ<br>
-                                    r<strong>u</strong>n<br>
-                                </span>
-                            </div> 
-                            <button onclick="document.getElementById('Open-mid_back_rounded_vowel').play();" class='tooltip'> 
-                                <div class='ipa vowel'>ɔ</div>
-                                <div class='english vowel'>ough</div>
-                                <span class='tooltiptext'>
-                                    Open-mid Back Rounded Vowel<br>
-                                    ɔ<br>
-                                    <strong>ough</strong>t
-                                </span>
-                            </div>
-                        </td>
-                    
-                    </tr>
-                    
-                    <tr>
-                        <th>Open</th>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Near-open_front_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>æ</div>
-                                <div class='english vowel'>ah</div>
-                                <span class="tooltiptext">
-                                    Near-open Front Unrounded Vowel<br>
-                                    æ<br>
-                                    h<strong>a</strong>t
-                                </span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Near-open_central_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɐ</div>
-                                <span class="tooltiptext">
-                                    Near-open Central Unrounded Vowel<br>
-                                    ɐ
-                                </span>
-                            </div>
-                        
-                        </td>
-                        <td></td>
-                        <td></td>
-                    
-                    </tr>
-                    
-                    <tr>
-                        <th>Openest</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Open_front_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>a</div>
-                                <div class='english vowel'>a</div>
-                                <div class='chinese vowel'>a/<strong>e</strong>r</div>
-                                <span class='tooltiptext'>
-                                    Open Front Unrounded Vowel<br>
-                                    a<br>
-                                    h<strong>a</strong>t<br>
-                                    二,阿,安,盎<br>
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Open_front_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɶ</div>
-                                <span class='tooltiptext'>
-                                    Open Front Rounded Vowel<br>
-                                    ɶ
-                                </span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <button onclick="document.getElementById('Open_back_unrounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɑ</div>
-                                <div class='english vowel'>a</div>
-                                <span class='tooltiptext'>
-                                    Open Back Unrounded Vowel<br>
-                                    ɑ<br>
-                                    h<strong>o</strong>t
-                                </span>
-                            </div>
-                            <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa vowel'>ɒ</div>
-                                <span class='tooltiptext'>
-                                    Open Back Rounded Vowel<br>
-                                    ɒ
-                                </span>
-                            </div>
-                        </td>
-                    </tr>
-                
+                            <span class='tooltiptext'>
+                                Open-mid Front Unrounded Vowel<br>
+                                ɛ<br>
+                                b<strong>e</strong>t<br>
+                                言, 元<br>
+                            </span>
+
+                        </div>
+                        <div onclick="document.getElementById('Open-mid_front_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>œ</div>
+                            <span class='tooltiptext'>
+                                Open-mid Front Rounded Vowel<br>
+                                œ
+                            </span>
+
+                        </div>
+
+                    </td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Open-mid_central_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɜ</div>
+                            <div class='english vowel'>ea</div>
+                            <span class='tooltiptext'>
+                                Open-mid Central Unrounded Vowel<br>
+                                ɜ<br>
+                                <strong>ea</strong>rn
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Open-mid_central_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɞ</div>
+                            <span class='tooltiptext'>
+                                Open-mid Central Rounded Vowel<br>
+                                ɞ
+                            </span>
+                        </div>
+
+                    </td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Open-mid_back_unrounded_vowel2').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ʌ </div>
+                            <div class='english vowel'>u</div>
+                            <span class='tooltiptext'>
+                                Open-mid Back Unrounded Vowel<br>
+                                ʌ<br>
+                                r<strong>u</strong>n<br>
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Open-mid_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɔ</div>
+                            <div class='english vowel'>ough</div>
+                            <span class='tooltiptext'>
+                                Open-mid Back Rounded Vowel<br>
+                                ɔ<br>
+                                <strong>ough</strong>t
+                            </span>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <th>Open</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Near-open_front_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>æ</div>
+                            <div class='english vowel'>ah</div>
+                            <span class="tooltiptext">
+                                Near-open Front Unrounded Vowel<br>
+                                æ<br>
+                                h<strong>a</strong>t
+                            </span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Near-open_central_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɐ</div>
+                            <span class="tooltiptext">
+                                Near-open Central Unrounded Vowel<br>
+                                ɐ
+                            </span>
+                        </div>
+
+                    </td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <th>Openest</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Open_front_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>a</div>
+                            <div class='english vowel'>a</div>
+                            <div class='chinese vowel'>a/<strong>e</strong>r</div>
+                            <span class='tooltiptext'>
+                                Open Front Unrounded Vowel<br>
+                                a<br>
+                                h<strong>a</strong>t<br>
+                                二,阿,安,盎<br>
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Open_front_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɶ</div>
+                            <span class='tooltiptext'>
+                                Open Front Rounded Vowel<br>
+                                ɶ
+                            </span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div onclick="document.getElementById('Open_back_unrounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɑ</div>
+                            <div class='english vowel'>a</div>
+                            <span class='tooltiptext'>
+                                Open Back Unrounded Vowel<br>
+                                ɑ<br>
+                                h<strong>o</strong>t
+                            </span>
+                        </div>
+                        <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
+                            <div class='ipa vowel'>ɒ</div>
+                            <span class='tooltiptext'>
+                                Open Back Rounded Vowel<br>
+                                ɒ
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+
                 </table>
-                
+
 
             </div>
-        </section>
 
-        <!-- 
-            CONSONANTS
-         -->
-        
-        <section class='consonants-section'>
-            
-            <h2>Consonants</h2>
-            
-            <div class='consonants-table'>
+            <!-- 
+                        CONSONANTS
+                     -->
+
+            <div id="consonants" class='phoneme-category'>
                 <table>
                     <tr>
                         <th></th>
@@ -913,12 +993,13 @@
                         <th>Uvular</th>
                         <th>Pharyngeal</th>
                         <th>Glottal</th>
-                    
+
                     </tr>
                     <tr>
                         <th>Plosive</th>
                         <td>
-                            <button onclick="document.getElementById('Voiceless_bilabial_plosive.ogg').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiceless_bilabial_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>p</div>
                                 <div class='english consonant'>p</div>
                                 <div class='chinese consonant'>b</div>
@@ -928,42 +1009,45 @@
                                     <strong>p</strong>ay<br>
                                     <strong>帮</strong> （unaspirated)
                                 </span>
-                            
-                            </button>
-                            
-                            
-                            <button onclick="document.getElementById('Voiceless_bilabial_plosive.ogg').play();" class='tooltip'>
+
+                            </div>
+
+
+                            <div onclick="document.getElementById('Voiceless_bilabial_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='chinese consonant'>pʰ</div>
                                 <span class='tooltiptext'>
                                     Bilabial Plosive Unvoiced Aspirated<br>
                                     pʰ<br>
                                     <strong>p</strong>ay<br>
                                     <strong>碰</strong> （aspirated)
-                                
+
                                 </span>
-                            
-                            </button>
-                            
+
+                            </div>
+
 
                             <!-- I am confused as to how p and b differ. The pinyin b appears to be more like a p, so I am not sure how to classify this. Korean and CHinese pronuciations here seem to differ slightly from English in a subtle way.-->
-                            <button onclick="document.getElementById('Voiced_bilabial_plosive.ogg').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiced_bilabial_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>b</div>
                                 <div class='english consonant'>b</div>
                                 <span class='tooltiptext'>
                                     Bilabial Plosive voiced<br>
                                     b<br>
                                     "b" as in <strong>b</strong>ay
-                                
+
                                 </span>
-                            
-                            </button>
-                            
-                                                    
-                            
-                             </td>
+
+                            </div>
+
+
+
+                        </td>
                         <td></td>
-                        <td colspan='3' class='center'> 
-                            <button onclick="document.getElementById('Voiceless_alveolar_plosive').play();" class='tooltip'>
+                        <td colspan='3' class='center'>
+                            <div onclick="document.getElementById('Voiceless_alveolar_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class='tooltip phoneme'>
                                 <div class='ipa consonant'>t</div>
                                 <div class='english consonant'>t</div>
                                 <div class='chinese consonant'>d</div>
@@ -972,35 +1056,38 @@
                                     t<br>
                                     <strong>t</strong>ie<br>
                                     的
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            
-                            <button onclick="document.getElementById('Voiceless_alveolar_plosive').play();" class='tooltip'>
+
+
+                            <div onclick="document.getElementById('Voiceless_alveolar_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='chinese consonant'>tʰ</div>
                                 <span class='tooltiptext'>
                                     Alveolar Plosive Unvoiced Aspirated<br>
                                     tʰ<br>
                                     听
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_alveolar_plosive').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_alveolar_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>d</div>
                                 <div class='english consonant'>d</div>
                                 <span class='tooltiptext'>
                                     Alveolar Plosive Voiced<br>
                                     d<br>
                                     <strong>d</strong>onut
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiceless_alveolar_sibilant_affricate').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_alveolar_sibilant_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant affricate'>ts</div>
                                 <div class='english consonant affricate'>ds</div>
                                 <div class='chinese consonant affricate'>z</div>
@@ -1009,12 +1096,13 @@
                                     t͡sʰ<br>
                                     bu<strong>ds</strong><br>
                                     子
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiceless_alveolar_sibilant_affricate').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_alveolar_sibilant_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant affricate'>t͡sʰ</div>
                                 <div class='english consonant affricate'>ts</div>
                                 <div class='chinese consonant affricate'>c</div>
@@ -1023,90 +1111,98 @@
                                     ts<br>
                                     ca<strong>ts</strong><br>
                                     错
-                                
+
                                 </span>
-                            
+
                             </div>
-                            <button onclick="document.getElementById('Voiced_alveolar_sibilant_affricate').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiced_alveolar_sibilant_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant affricate'>dz</div>
                                 <span class='tooltiptext'>
                                     Alveolar Affricate Voiced<br>
                                     dz<br>
                                     子?
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
+
                         </td>
-                        
+
                         <td>
-                            
-                            <button onclick="document.getElementById('Voiceless_retroflex_stop').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_retroflex_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʈ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Plosive Unvoiced<br>
                                     ʈ
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_retroflex_stop').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_retroflex_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɖ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Plosive Voiced<br>
                                     ɖ
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiceless_retroflex_affricate').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_retroflex_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʈʂ</div>
                                 <div class='chinese consonant'>zh</div>
                                 <span class='tooltiptext'>
                                     Retroflex Sibilant Affricate Unvoiced (Unaspirated)<br>
                                     ʈʂ<br>
                                     站，找
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiceless_retroflex_affricate').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_retroflex_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʈʂʰ</div>
                                 <div class='chinese consonant'>ch</div>
                                 <span class='tooltiptext'>
                                     Retroflex Sibilant Affricate Unvoiced (Aspirated)<br>
                                     ʈʂʰ<br>
                                     吃，长
-                                
-                                </span>
-                            
-                            </button>
 
-                            <button onclick="document.getElementById('Voiced_retroflex_affricate').play();" class='tooltip'>
+                                </span>
+
+                            </div>
+
+                            <div onclick="document.getElementById('Voiced_retroflex_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɖʐ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Sibilant Affricate Voiced<br>
                                     ɖʐ
-                    
+
                                 </span>
-                            
-                            </button>
-                        
+
+                            </div>
+
                         </td>
                         <td>
-                                                    
-                            <button onclick="document.getElementById('Voiceless_palatal_plosive').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_palatal_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>c</div>
                                 <span class='tooltiptext'>
                                     Palatal Plosive unvoiced<br>
                                     c
                                 </span>
                             </div>
-                            <button onclick="document.getElementById('Voiced_palatal_plosive').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiced_palatal_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɟ</div>
                                 <span class='tooltiptext'>
                                     Palatal Plosive Voiced<br>
@@ -1114,43 +1210,47 @@
                                 </span>
                             </div>
 
-                            <button onclick="document.getElementById('Voiceless_alveolo-palatal_affricate').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiceless_alveolo-palatal_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>tɕ</div>
                                 <div class='chinese consonant'>j</div>
                                 <span class='tooltiptext'>
                                     Alveolo-palatal sibilant affricate Unvoiced (Unaspirated)<br>
                                     tɕ<br>
                                     进，鸡
-                                
+
                                 </span>
-                            
-                            </button>
-                                
-                            <button onclick="document.getElementById('Voiceless_alveolo-palatal_affricate').play();" class='tooltip'>
+
+                            </div>
+
+                            <div onclick="document.getElementById('Voiceless_alveolo-palatal_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>tɕʰ</div>
                                 <div class='chinese consonant'>q</div>
                                 <span class='tooltiptext'>
                                     Alveolo-palatal sibilant affricate Unvoiced (Aspirated)<br>
                                     tɕʰ<br>
                                     前，球
-                                
+
                                 </span>
-                            
-                            </button>
-                            <button onclick="document.getElementById('Voiced_alveolo-palatal_affricate').play();" class='tooltip'>
+
+                            </div>
+                            <div onclick="document.getElementById('Voiced_alveolo-palatal_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>dʑ</div>
                                 <span class='tooltiptext'>
                                     Alveolo-palatal sibilant affricate Voiced (Aspirated)<br>
                                     dʑ
-                                
+
                                 </span>
-                            
-                            </button>
-                                                                                                        
+
+                            </div>
+
                         </td>
                         <td>
-                                                    
-                            <button onclick="document.getElementById('Voiceless_velar_plosive').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_velar_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>k</div>
                                 <div class='english consonant'>k</div>
                                 <div class='chinese consonant'>g</div>
@@ -1159,15 +1259,16 @@
                                     s<strong>k</strong>in<br>
                                     干
 
-                                
+
                                 </span>
-                            
+
                             </div>
-    
-                            
-                                                                            
-                                                                                                            
-                            <button onclick="document.getElementById('Voiceless_velar_plosive').play();" class='tooltip'>
+
+
+
+
+                            <div onclick="document.getElementById('Voiceless_velar_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>kʰ</div>
                                 <div class='english consonant'>kʰ</div>
                                 <div class='chinese consonant'>kʰ</div>
@@ -1176,86 +1277,89 @@
                                     <strong>k</strong>ey<br>
                                     口
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_velar_plosive_02').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_velar_plosive_02').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>g</div>
                                 <div class='english consonant'>g</div>
                                 <span class='tooltiptext'>
                                     Velar Plosive Voiced<br>
                                     <strong>g</strong>o
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
-                        
+
                         <td>
-                                                                                
-                            <button onclick="document.getElementById('Voiceless_uvular_plosive').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_uvular_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>q</div>
                                 <span class='tooltiptext'>
                                     Uvular Plosive Unvoiced<br>
                                     q
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_uvular_stop').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_uvular_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɢ</div>
                                 <span class='tooltiptext'>
                                     Uvular Plosive Voiced<br>
                                     ɢ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
 
-                            
-                            <button onclick="document.getElementById('Epiglottal_stop').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Epiglottal_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ʡ</div>
                                 <span class='tooltiptext'>
                                     Pharyngeal Plosive Unvoiced<br>
                                     ʡ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-   
-                            
-                            <button onclick="document.getElementById('Glottal_stop').play();" class='tooltip'>
+
+
+                            <div onclick="document.getElementById('Glottal_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ʔ</div>
                                 <span class='tooltiptext'>
                                     Glottal Plosive Unvoiced<br>
                                     ʔ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
-                    
+
                     </tr>
-                    
+
                     <tr>
                         <th>Nasal</th>
-                        <td>                                                                                
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>m̥</div>
-                                <span class='tooltiptext'>
-                                    Bilabial Nasal Unvoiced<br>
-                                    m̥
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Bilabial_nasal').play();" class='tooltip'>
+                        <td>
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>m̥</div>
+                                            <span class='tooltiptext'>
+                                                Bilabial Nasal Unvoiced<br>
+                                                m̥
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Bilabial_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>m</div>
                                 <div class='english consonant'>m</div>
                                 <div class='chinese consonant'>m</div>
@@ -1263,33 +1367,33 @@
                                     Bilabial Nasal Voiced<br>
                                     <strong>m</strong>oon<br>
                                     明
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                            <button onclick="document.getElementById('Labiodental_nasal').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Labiodental_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ɱ</div>
                                 <span class='tooltiptext'>
                                     Labiodental Nasal Voiced<br>
                                     ɱ
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td colspan='3' class='center'>
-                                                                                                            
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>n̥</div>
-                                <span class='tooltiptext'>
-                                    Alveolar Nasal Unvoiced<br>
-                                    n̥
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Alveolar_nasal').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>n̥</div>
+                                            <span class='tooltiptext'>
+                                                Alveolar Nasal Unvoiced<br>
+                                                n̥
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Alveolar_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>n</div>
                                 <div class='english consonant'>n</div>
                                 <div class='chinese consonant'>n</div>
@@ -1297,66 +1401,66 @@
                                     Alveolar Nasal Voiced<br>
                                     <strong>n</strong>ow<br>
                                     你
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                    
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɳ̊</div>
-                                <span class='tooltiptext'>
-                                    Retroflex Nasal Unvoiced<br>
-                                    ɳ̊
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Retroflex_nasal').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɳ̊</div>
+                                            <span class='tooltiptext'>
+                                                Retroflex Nasal Unvoiced<br>
+                                                ɳ̊
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Retroflex_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ɳ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Nasal Voiced<br>
                                     ɳ
-                                
+
                                 </span>
-                            
+
                             </div>
-                        </td>                        
-                        <td>                                                                                                                                    
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɲ̊</div>
-                                <span class='tooltiptext'>
-                                    Palatal Nasal Unvoiced<br>
-                                    ɲ̊
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Palatal_nasal').play();" class='tooltip'>
+                        </td>
+                        <td>
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɲ̊</div>
+                                            <span class='tooltiptext'>
+                                                Palatal Nasal Unvoiced<br>
+                                                ɲ̊
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Palatal_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ɲ</div>
                                 <span class='tooltiptext'>
                                     Palatal Nasal Voiced<br>
                                     ɲ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
-                        <td>                       
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ŋ̊</div>
-                                <span class='tooltiptext'>
-                                    Velar Nasal Unvoiced<br>
-                                    ŋ̊	
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Velar_nasal').play();" class='tooltip'>
+                        <td>
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ŋ̊</div>
+                                            <span class='tooltiptext'>
+                                                Velar Nasal Unvoiced<br>
+                                                ŋ̊	
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Velar_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ŋ</div>
                                 <div class='english consonant'>ng</div>
                                 <div class='chinese consonant'>ng</div>
@@ -1365,217 +1469,226 @@
                                     ŋ<br>
                                     si<strong>ng</strong><br>
                                     王
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
-                        <td>                            
-                            <button onclick="document.getElementById('Uvular_nasal').play();" class='tooltip'>
+                        <td>
+                            <div onclick="document.getElementById('Uvular_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ɴ</div>
                                 <span class='tooltiptext'>
                                     Uvular Nasal Voiced<br>
                                     ɴ
-                                
+
                                 </span>
-                            
-                            </div></td>
+
+                            </div>
+                        </td>
                         <td></td>
                         <td></td>
-                    
+
                     </tr>
-                    
+
                     <tr>
                         <th>Trill</th>
-                        <td>     
-                            
-                            <button onclick="document.getElementById('Voiceless_bilabial_trill_with_aspiration').play();" class='tooltip'>
+                        <td>
+
+                            <div onclick="document.getElementById('Voiceless_bilabial_trill_with_aspiration').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʙ̥</div>
                                 <span class='tooltiptext'>
                                     Bilabial Trill Unvoiced<br>
                                     ʙ̥
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Bilabial_trill').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Bilabial_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ʙ</div>
                                 <span class='tooltiptext'>
                                     Bilabial Trill Voiced<br>
                                     ʙ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td></td>
-                        <td colspan='3' class='center'>       
-                            
-                            <button onclick="document.getElementById('Voiceless_alveolar_trill').play();" class='tooltip'>
+                        <td colspan='3' class='center'>
+
+                            <div onclick="document.getElementById('Voiceless_alveolar_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>r̥</div>
                                 <span class='tooltiptext'>
                                     Alveolar Trill Unvoiced<br>
                                     r̥
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Alveolar_trill').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Alveolar_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>r</div>
                                 <span class='tooltiptext'>
                                     Alveolar Trill Voiced<br>
                                     r
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td>
-                                                        
-                            <button onclick="document.getElementById('Voiceless_uvular_trill').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_uvular_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʀ̥</div>
                                 <span class='tooltiptext'>
                                     Uvular Trill Unvoiced<br>
                                     ʀ̥
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Uvular_trill').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Uvular_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ʀ</div>
                                 <span class='tooltiptext'>
                                     Uvular Trill Voiced<br>
                                     ʀ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                            <button onclick="document.getElementById('Voiceless_epiglottal_trill').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiceless_epiglottal_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʜ</div>
                                 <span class='tooltiptext'>
                                     Epiglottal Trill Unvoiced<br>
                                     ʜ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td></td>
-                    
+
                     </tr>
-                    
+
                     <tr>
                         <th>Tap/Flap</th>
                         <td></td>
                         <td>
-                                                    
-                            <button onclick="document.getElementById('Labiodental_flap  ').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Labiodental_flap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ⱱ</div>
                                 <span class='tooltiptext'>
                                     Labio-dental Tap/Flap Voiced<br>
                                     ⱱ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td colspan='3' class='center'>
-                                                                                    
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɾ̥</div>
-                                <span class='tooltiptext'>
-                                    Alveolar Tap/Flap Unvoiced<br>
-                                    ɾ̥
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Alveolar_tap').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɾ̥</div>
+                                            <span class='tooltiptext'>
+                                                Alveolar Tap/Flap Unvoiced<br>
+                                                ɾ̥
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Alveolar_tap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ɾ</div>
                                 <span class='tooltiptext'>
                                     Alveolar Tap/Flap Voiced<br>
                                     ɾ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɽ̊</div>
-                                <span class='tooltiptext'>
-                                    Retroflex Tap/Flap Unvoiced<br>
-                                    ɽ̊
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Retroflex_flap').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɽ̊</div>
+                                            <span class='tooltiptext'>
+                                                Retroflex Tap/Flap Unvoiced<br>
+                                                ɽ̊
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Retroflex_flap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ɽ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Tap/Flap Voiced<br>
                                     ɽ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td>
-                            <button onclick="document.getElementById('Epiglottal_flap').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Epiglottal_flap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
                                 <div class='ipa consonant'>ʡ̆</div>
                                 <span class='tooltiptext'>
                                     Epiglottal Tap<br>
                                     ʡ̆
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td></td>
-                    
+
                     </tr>
-                    
+
                     <tr>
                         <th>Fricative</th>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_bilabial_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_bilabial_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɸ</div>
                                 <span class='tooltiptext'>
                                     Bilabial Fricative Unvoiced<br>
                                     ɸ
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_bilabial_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_bilabial_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>β</div>
                                 <span class='tooltiptext'>
                                     Bilabial Fricative Voiced<br>
                                     β
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_labiodental_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_labiodental_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>f</div>
                                 <div class='english consonant'>f</div>
                                 <div class='chinese consonant'>f</div>
@@ -1584,52 +1697,56 @@
                                     f<br>
                                     <strong>f</strong>air<br>
                                     发
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_labiodental_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_labiodental_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>v</div>
                                 <div class='english consonant'>v</div>
                                 <span class='tooltiptext'>
                                     Labiodental Fricative Voiced<br>
                                     v<br>
                                     <strong>v</strong>oice
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_dental_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_dental_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>θ</div>
                                 <div class='english consonant'>th</div>
                                 <span class='tooltiptext'>
                                     Dental Fricative Unvoiced<br>
                                     θ<br>
                                     <strong>th</strong>in
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_dental_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_dental_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ð</div>
                                 <div class='english consonant'>th</div>
                                 <span class='tooltiptext'>
                                     Dental Fricative Voiced<br>
                                     ð<br>
                                     <strong>th</strong>ey
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_alveolar_sibilant').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_alveolar_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>s</div>
                                 <div class='english consonant'>s</div>
                                 <div class='chinese consonant'>s</div>
@@ -1638,24 +1755,26 @@
                                     s<br>
                                     <strong>s</strong>o<br>
                                     死
-                                
+
                                 </span>
-                            
+
                             </div>
 
-                            <button onclick="document.getElementById('Voiced_alveolar_sibilant').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiced_alveolar_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>z</div>
                                 <div class='english consonant'>z</div>
                                 <span class='tooltiptext'>
                                     Alveolar Fricative Voiced<br>
                                     z<br>
                                     <strong>z</strong>oo
-                                
+
                                 </span>
-                            
+
                             </div>
 
-                            <button onclick="document.getElementById('Voiceless_palato-alveolar_affricate').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiceless_palato-alveolar_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>tʃ</div>
                                 <div class='english consonant'>ch</div>
                                 <span class='tooltiptext'>
@@ -1664,354 +1783,380 @@
                                     <strong>ch</strong>ur<strong>ch</strong>
                                 </span>
                             </div>
-                            <button onclick="document.getElementById('Voiced_palato-alveolar_affricate').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiced_palato-alveolar_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>dʒ</div>
                                 <div class='english consonant'>j</div>
                                 <span class='tooltiptext'>
                                     Palato-alveolar Sibilant Affricate Voiced<br>
                                     dʒ<br>
                                     <strong>j</strong>u<strong>dg</strong>e
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_palato-alveolar_sibilant').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_palato-alveolar_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʃ</div>
                                 <div class='english consonant'>sh</div>
                                 <span class='tooltiptext'>
                                     Post-alveolar Fricative Unvoiced<br>
                                     ʃ<br>
                                     <strong>sh</strong>ow
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_palato-alveolar_sibilant').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_palato-alveolar_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʒ</div>
                                 <div class='english consonant'>J</div>
                                 <span class='tooltiptext'>
                                     Post-alveolar Fricative Voiced<br>
                                     ʒ<br>
                                     <strong>J</strong>acques
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_retroflex_sibilant').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_retroflex_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʂ</div>
                                 <div class='chinese consonant'>sh</div>
                                 <span class='tooltiptext'>
                                     Retroflex Fricative Unvoiced<br>
                                     ʂ<br>
                                     少，上
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_retroflex_sibilant').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_retroflex_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʐ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Fricative Voiced<br>
                                     ʐ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_palatal_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_palatal_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ç</div>
                                 <span class='tooltiptext'>
                                     Palatal Non-sibilant Fricative Unvoiced<br>
                                     ç
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_palatal_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_palatal_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʝ</div>
                                 <span class='tooltiptext'>
                                     Palatal Non-sibilant Fricative Voiced<br>
                                     ʝ
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiceless_alveolo-palatal_sibilant').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_alveolo-palatal_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɕ</div>
                                 <div class='chinese consonant'>x</div>
                                 <span class='tooltiptext'>
                                     Alveo-palatal Sibilant Fricative Unvoiced<br>
                                     ɕ<br>
                                     小，下
-                                
+
                                 </span>
-                                
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_alveolo-palatal_sibilant').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_alveolo-palatal_sibilant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʑ</div>
                                 <span class='tooltiptext'>
                                     Alveo-palatal Sibilant Fricative Voiced<br>
                                     ʑ
-                                
-                                </span>
-                            
-                            </div>
-                            
 
-                            
+                                </span>
+
+                            </div>
+
+
+
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_velar_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_velar_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>x</div>
                                 <div class='chinese consonant'>h</div>
                                 <span class='tooltiptext'>
                                     Velar Fricative Unvoiced<br>
                                     x<br>
                                     火，后
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_velar_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_velar_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɣ</div>
                                 <span class='tooltiptext'>
                                     Velar Fricative Voiced<br>
                                     ɣ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_uvular_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_uvular_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>χ</div>
                                 <span class='tooltiptext'>
                                     Uvular Fricative Unvoiced<br>
                                     χ
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_uvular_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_uvular_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʁ</div>
                                 <span class='tooltiptext'>
                                     Uvular Fricative Voiced<br>
                                     ʁ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_pharyngeal_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_pharyngeal_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ħ</div>
                                 <span class='tooltiptext'>
                                     Pharyngeal Fricative Unvoiced<br>
                                     ħ
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_pharyngeal_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_pharyngeal_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʕ</div>
                                 <span class='tooltiptext'>
                                     Pharyngeal Fricative Voiced<br>
                                     ʕ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_glottal_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiceless_glottal_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>h</div>
                                 <div class='english consonant'>h</div>
                                 <span class='tooltiptext'>
                                     Glottal Fricative Unvoiced<br>
                                     h<br>
                                     <strong>h</strong>air
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_glottal_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_glottal_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɦ</div>
                                 <span class='tooltiptext'>
                                     Glottal Fricative Voiced<br>
                                     ɦ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
-                    
+
                     </tr>
-                    
+
                     <tr>
                         <th>Lateral Fricative</th>
                         <td></td>
                         <td></td>
-                        <td colspan='3' class='center'>                                                                                                                        
-                            <button onclick="document.getElementById('Voiceless_alveolar_lateral_fricative').play();" class='tooltip'>
+                        <td colspan='3' class='center'>
+                            <div onclick="document.getElementById('Voiceless_alveolar_lateral_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɬ</div>
                                 <span class='tooltiptext'>
                                     Alveolar Lateral Fricative Unvoiced<br>
                                     ɬ
-                                
+
                                 </span>
-                            
+
                             </div>
-                            
-                            <button onclick="document.getElementById('Voiced_alveolar_lateral_fricative').play();" class='tooltip'>
+
+                            <div onclick="document.getElementById('Voiced_alveolar_lateral_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɮ</div>
                                 <span class='tooltiptext'>
                                     Alveolar Lateral Fricative Voiced<br>
                                     ɮ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                            <button onclick="document.getElementById('Voiceless_retroflex_lateral_fricative').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiceless_retroflex_lateral_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɭ̊˔</div>
                                 <span class='tooltiptext'>
                                     Retroflex Lateral Fricative Voiceless<br>
                                     ɭ̊˔
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                            <button onclick="document.getElementById('Voiceless_palatal_lateral_fricative').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiceless_palatal_lateral_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʎ̝̊</div>
                                 <span class='tooltiptext'>
                                     Palatal Lateral Fricative Voiceless<br>
                                     ʎ̝̊
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td>
-                            <button onclick="document.getElementById('Voiceless_velar_lateral_fricative').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Voiceless_velar_lateral_fricative').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʟ̝̊</div>
                                 <span class='tooltiptext'>
                                     Velar Lateral Fricative Voiceless<br>
                                     ʟ̝̊
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td></td>
                         <td></td>
                         <td></td>
-                    
+
                     </tr>
-                    
+
                     <tr>
                         <th>Approximant</th>
                         <td>
-                                               
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ʋ̥</div>
-                                <span class='tooltiptext'>
-                                    Labiodental Aproximant Unvoiced<br>
-                                    ʋ̥
-                                
-                                </span>
-                            
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Labiodental_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ʋ̥</div>
+                                            <span class='tooltiptext'>
+                                                Labiodental Aproximant Unvoiced<br>
+                                                ʋ̥
+                                            
+                                            </span>
+                                        
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Labiodental_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʋ</div>
                                 <span class='tooltiptext'>
                                     Labiodental Aproximant Voiced<br>
                                     ʋ
-                                
+
                                 </span>
-                            
+
                             </div>
                         </td>
                         <td></td>
                         <td colspan='3' class='center'>
-                                                                           
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɹ̥</div>
-                                <span class='tooltiptext'>
-                                    Alveolar Aproximant Unvoiced<br>
-                                    ɹ̥
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Alveolar_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɹ̥</div>
+                                            <span class='tooltiptext'>
+                                                Alveolar Aproximant Unvoiced<br>
+                                                ɹ̥
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Alveolar_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɹ</div>
                                 <div class='english consonant'>r</div>
                                 <span class='tooltiptext'>
                                     Alveolar Aproximant Voiced<br>
                                     ɹ<br>
                                     <strong>r</strong>ight
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                                                                                                   
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɻ̊</div>
-                                <span class='tooltiptext'>
-                                    Retroflex Aproximant Unvoiced<br>
-                                    ɻ̊
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Retroflex_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɻ̊</div>
+                                            <span class='tooltiptext'>
+                                                Retroflex Aproximant Unvoiced<br>
+                                                ɻ̊
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Retroflex_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɻ</div>
                                 <div class='chinese consonant'>r</div>
                                 <span class='tooltiptext'>
                                     Retroflex Aproximant Voiced<br>
                                     ɻ<br>
-                                    人，肉      
-                                
+                                    人，肉
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                                                                                                                           
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>j̊</div>
-                                <span class='tooltiptext'>
-                                    Palatal Aproximant Unvoiced<br>
-                                    j̊
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Palatal_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>j̊</div>
+                                            <span class='tooltiptext'>
+                                                Palatal Aproximant Unvoiced<br>
+                                                j̊
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Palatal_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>j</div>
                                 <div class='english consonant'>y</div>
                                 <div class='chinese consonant'>y/i</div>
@@ -2020,22 +2165,23 @@
                                     j<br>
                                     <strong>y</strong>es<br>
                                     意
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                                                                                                                                                   
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɰ̊</div>
-                                <span class='tooltiptext'>
-                                    Velar Aproximant Unvoiced<br>
-                                    ɰ̊
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Voiced_velar_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɰ̊</div>
+                                            <span class='tooltiptext'>
+                                                Velar Aproximant Unvoiced<br>
+                                                ɰ̊
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Voiced_velar_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɰ</div>
                                 <div class='english consonant'>w</div>
                                 <div class='chinese consonant'>w/u</div>
@@ -2044,32 +2190,33 @@
                                     ɰ<br>
                                     <strong>w</strong>eigh<br>
                                     我，为
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td></td>
                         <td></td>
                         <td></td>
-                    
+
                     </tr>
-                    
+
                     <tr>
                         <th>Lateral Approximant</th>
                         <td></td>
                         <td></td>
                         <td colspan='3' class='center'>
-                                                                                                                                                                               
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>l̥</div>
-                                <span class='tooltiptext'>
-                                    Alveolar Lateral Aproximant Unvoiced<br>
-                                    l̥
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Alveolar_lateral_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>l̥</div>
+                                            <span class='tooltiptext'>
+                                                Alveolar Lateral Aproximant Unvoiced<br>
+                                                l̥
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Alveolar_lateral_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>l</div>
                                 <div class='english consonant'>l</div>
                                 <div class='chinese consonant'>l</div>
@@ -2078,101 +2225,111 @@
                                     l<br>
                                     <strong>l</strong>eaf<br>
                                     来
-                                
+
                                 </span>
                             </div>
-                            
+
                         </td>
                         <td>
-                                                                                                                                                                           
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ɭ̊</div>
-                                <span class='tooltiptext'>
-                                    Retroflex Lateral Aproximant Unvoiced<br>
-                                    ɭ̊
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Retroflex_lateral_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ɭ̊</div>
+                                            <span class='tooltiptext'>
+                                                Retroflex Lateral Aproximant Unvoiced<br>
+                                                ɭ̊
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Retroflex_lateral_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɭ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Lateral Aproximant Voiced<br>
                                     ɭ
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                                                                                                                                                                           
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ʎ̥</div>
-                                <span class='tooltiptext'>
-                                    Palatal Lateral Aproximant Unvoiced<br>
-                                    ʎ̥
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Palatal_lateral_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ʎ̥</div>
+                                            <span class='tooltiptext'>
+                                                Palatal Lateral Aproximant Unvoiced<br>
+                                                ʎ̥
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Palatal_lateral_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʎ</div>
                                 <span class='tooltiptext'>
                                     Palatal Lateral Aproximant Voiced<br>
                                     ʎ
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                                                                                                                                                                           
-                            <!-- <button onclick="document.getElementById('Open_back_rounded_vowel').play();" class='tooltip'>
-                                <div class='ipa consonant'>ʟ̥</div>
-                                <span class='tooltiptext'>
-                                    Velar Lateral Aproximant Unvoiced<br>
-                                    ʟ̥
-                                
-                                </span>
-                            </div> -->
-                            
-                            <button onclick="document.getElementById('Velar_lateral_approximant').play();" class='tooltip'>
+
+                            <!-- <div onclick="document.getElementById('Open_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                                            <div class='ipa consonant'>ʟ̥</div>
+                                            <span class='tooltiptext'>
+                                                Velar Lateral Aproximant Unvoiced<br>
+                                                ʟ̥
+                                            
+                                            </span>
+                                        </div> -->
+
+                            <div onclick="document.getElementById('Velar_lateral_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʟ</div>
                                 <span class='tooltiptext'>
                                     Velar Lateral Aproximant Voiced<br>
                                     ʟ
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td>
-                            <button onclick="document.getElementById('Uvular_lateral_approximant').play();" class='tooltip'>
+                            <div onclick="document.getElementById('Uvular_lateral_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʟ̠</div>
                                 <span class='tooltiptext'>
                                     Uvular Lateral Aproximant Voiced<br>
                                     ʟ̠
-                                
+
                                 </span>
                             </div>
                         </td>
                         <td></td>
                         <td></td>
-                    
+
                     </tr>
                 </table>
-            
+
             </div>
-        
-        </section>
-        
-        <script src="js/script.js"></script>
 
-    </body>
+        </div>
+        <div id="phoneme-description-display">
+            <hr>
+            <i id="speaker-icon" class="fa fa-volume-up" aria-hidden="true"></i>
+            <div id="phoneme-description"></div>
+        </div>
 
-
-
-</html>        
-
+    </div>
 
 
 
+    </div>
 
-            
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+
+</html>
