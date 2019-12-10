@@ -7,8 +7,7 @@
     <link href="../../../css/all-pages.css" rel="stylesheet">
     <link href="css/style.css" rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -511,7 +510,7 @@
 
     <div id="display-container">
         <div id="left-display">
-
+            <h1>Interactive Phoneme Chart</h1>
             <h2 class="option-title">Select Language</h2>
             <div id='language-options-radios' class="radio-options">
                 <div class='language-option-radio'>
@@ -537,7 +536,7 @@
                 <button id="english-button" class="option-button"
                     onclick="document.getElementById('english-radio').checked=true; display();">English</button>
                 <button id="chinese-button" class="option-button"
-                    onclick="document.getElementById('chinese-radio').checked=true; display();">Chinese</button>
+                    onclick="document.getElementById('chinese-radio').checked=true; display();">中文</button>
             </div>
 
             <h2 class="option-title">Select Phoneme Category</h2>
@@ -559,6 +558,11 @@
                     onclick="document.getElementById('consonants-radio').checked=true; display();">Consonants</button>
                 <button id="vowels-button" class="option-button"
                     onclick="document.getElementById('vowels-radio').checked=true; display();">Vowels</button>
+            </div>
+
+            <div id="directions">
+                <p>Select language and phoneme category above. Click characters in the chart to display details and hear
+                    pronunciations.</p>
             </div>
 
         </div>
@@ -644,7 +648,8 @@
                             ɯ
                         </span>
                     </div>
-                    <div onclick="document.getElementById('Close_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                    <div onclick="document.getElementById('Close_back_rounded_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                        class="phoneme tooltip">
                         <div class='ipa vowel'>u</div>
                         <div class='english vowel'>ue</div>
                         <div class='chinese vowel'>w<strong>u</strong>/<strong>u</strong></div>
@@ -789,7 +794,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <div onclick="document.getElementById('Mid-central_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                        <div onclick="document.getElementById('Mid-central_vowel').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                            class="phoneme tooltip">
                             <div class='ipa vowel'>ə</div>
                             <div class='english vowel'>uh/a</div>
                             <div class='chinese vowel'><strong>e</strong>n,<strong>e</strong>ng</div>
@@ -1320,7 +1326,8 @@
                         <td>
 
 
-                            <div onclick="document.getElementById('Epiglottal_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Epiglottal_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʡ</div>
                                 <span class='tooltiptext'>
                                     Pharyngeal Plosive Unvoiced<br>
@@ -1333,7 +1340,8 @@
                         <td>
 
 
-                            <div onclick="document.getElementById('Glottal_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Glottal_stop').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʔ</div>
                                 <span class='tooltiptext'>
                                     Glottal Plosive Unvoiced<br>
@@ -1359,7 +1367,8 @@
                                         
                                         </div> -->
 
-                            <div onclick="document.getElementById('Bilabial_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Bilabial_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>m</div>
                                 <div class='english consonant'>m</div>
                                 <div class='chinese consonant'>m</div>
@@ -1372,7 +1381,8 @@
                             </div>
                         </td>
                         <td>
-                            <div onclick="document.getElementById('Labiodental_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Labiodental_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɱ</div>
                                 <span class='tooltiptext'>
                                     Labiodental Nasal Voiced<br>
@@ -1393,7 +1403,8 @@
                                         
                                         </div> -->
 
-                            <div onclick="document.getElementById('Alveolar_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Alveolar_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>n</div>
                                 <div class='english consonant'>n</div>
                                 <div class='chinese consonant'>n</div>
@@ -1418,7 +1429,8 @@
                                         
                                         </div> -->
 
-                            <div onclick="document.getElementById('Retroflex_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Retroflex_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɳ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Nasal Voiced<br>
@@ -1439,7 +1451,8 @@
                                         
                                         </div> -->
 
-                            <div onclick="document.getElementById('Palatal_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Palatal_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɲ</div>
                                 <span class='tooltiptext'>
                                     Palatal Nasal Voiced<br>
@@ -1460,7 +1473,8 @@
                                         
                                         </div> -->
 
-                            <div onclick="document.getElementById('Velar_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Velar_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ŋ</div>
                                 <div class='english consonant'>ng</div>
                                 <div class='chinese consonant'>ng</div>
@@ -1475,7 +1489,8 @@
                             </div>
                         </td>
                         <td>
-                            <div onclick="document.getElementById('Uvular_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Uvular_nasal').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɴ</div>
                                 <span class='tooltiptext'>
                                     Uvular Nasal Voiced<br>
@@ -1505,7 +1520,8 @@
 
                             </div>
 
-                            <div onclick="document.getElementById('Bilabial_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Bilabial_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʙ</div>
                                 <span class='tooltiptext'>
                                     Bilabial Trill Voiced<br>
@@ -1529,7 +1545,8 @@
 
                             </div>
 
-                            <div onclick="document.getElementById('Alveolar_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Alveolar_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>r</div>
                                 <span class='tooltiptext'>
                                     Alveolar Trill Voiced<br>
@@ -1555,7 +1572,8 @@
 
                             </div>
 
-                            <div onclick="document.getElementById('Uvular_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Uvular_trill').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʀ</div>
                                 <span class='tooltiptext'>
                                     Uvular Trill Voiced<br>
@@ -1609,7 +1627,8 @@
                                         
                                         </div> -->
 
-                            <div onclick="document.getElementById('Alveolar_tap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Alveolar_tap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɾ</div>
                                 <span class='tooltiptext'>
                                     Alveolar Tap/Flap Voiced<br>
@@ -1631,7 +1650,8 @@
                                         
                                         </div> -->
 
-                            <div onclick="document.getElementById('Retroflex_flap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Retroflex_flap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ɽ</div>
                                 <span class='tooltiptext'>
                                     Retroflex Tap/Flap Voiced<br>
@@ -1645,7 +1665,8 @@
                         <td></td>
                         <td></td>
                         <td>
-                            <div onclick="document.getElementById('Epiglottal_flap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);" class="phoneme tooltip">
+                            <div onclick="document.getElementById('Epiglottal_flap').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
                                 <div class='ipa consonant'>ʡ̆</div>
                                 <span class='tooltiptext'>
                                     Epiglottal Tap<br>
@@ -2314,9 +2335,11 @@
 
         </div>
         <div id="phoneme-description-display">
-            <hr>
+            <!-- <hr> -->
             <i id="speaker-icon" class="fa fa-volume-up" aria-hidden="true"></i>
             <div id="phoneme-description"></div>
+            <p id="audio-attribution">Audio courtesy of <a href="https://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License,_version_1.2" target="_blank">Free Software Foundation</a></p>
+
         </div>
 
     </div>

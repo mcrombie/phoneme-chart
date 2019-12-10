@@ -40,9 +40,9 @@ Base color - Orange: ffa502
     --button-hover: #3e5771;
     --button-selected: #4a6887;
 
-    --phoneme-color-hover:#2980b9;
-    --phoneme-color-active:#2980b9;
-    --speaker-color:#2980b9;
+    --phoneme-color-hover:#e67e22;
+    --phoneme-color-active:#e67e22;
+    --speaker-color:#e67e22;
   }
 
 
@@ -60,7 +60,7 @@ html,
 body{
     background-color: var(--background-color);
     color: #ecf0f1;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
 }
 
@@ -76,6 +76,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--display-container-background-color);
+    box-shadow:0 1rem 2rem var(--shadow-1);
 
     font-size:1.7rem;
 }
@@ -105,6 +106,7 @@ body{
     margin-top:1.7rem;
 }
 #phoneme-description-display{
+    position:relative;
     width:100%;
     height:45%;
 }
@@ -134,8 +136,14 @@ body{
 /* --------------------------------- */
 /* HEADINGS */
 /* --------------------------------- */
+h1{
+    font-size:2.5rem;
+    margin-top:6rem;
+    margin-bottom: 0rem;;
+}
 h2{
-    font-size:2rem;
+    font-size:1.8rem;
+    margin-top:2.5rem;
 }
 
 /* --------------------------------- */
@@ -258,11 +266,15 @@ table th{
     overflow:hidden;
     word-wrap: break-word;
     padding:.2rem;
+    border-bottom: 1px solid white;
 }
 
 table td{
     /* background-color:var(--tabledata-color); */
     text-align: center;
+    border-bottom: 1px solid white;
+    border-left:1px solid white;
+    padding:.1rem;
     
 }
 
@@ -277,8 +289,26 @@ table td{
 
 
 /* --------------------------------- */
-/*VOWELS SECTION */
+/* DIRECTIONS */
 /* --------------------------------- */
+
+#directions p{
+    font-size:1.2rem;
+    margin:1rem;
+    padding:1rem;
+}
+
+#audio-attribution{
+    position:absolute;
+    font-size: 1rem;
+    color:white;
+    left:60rem;
+    top:21.5rem;
+}
+
+#audio-attribution a{
+    color:#3498db;
+}
 
 
 

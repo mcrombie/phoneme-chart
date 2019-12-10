@@ -49,13 +49,13 @@ var phonemeDescription = function(html){
 var activatePhoneme = function(element){
     Array.prototype.forEach.call(document.getElementsByClassName("active"), function(element){
         element.classList.remove("active");
-    })
+    });
     element.className = "active phoneme tooltip"
 }
 
 var activateSpeaker = function(){
     console.log("Speaker is Active!")
-    document.getElementById("speaker-icon").style="color:#2980b9;";
+    document.getElementById("speaker-icon").style="color:#e67e22;";
     setTimeout(() => {
         document.getElementById("speaker-icon").style="color:white;";
     }, 1500);
