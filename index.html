@@ -466,6 +466,10 @@
             <source src="audio/Voiced_velar_approximant.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
+        <audio id="Voiced_labio-velar_approximant" controls>
+            <source src="audio/Voiced_labio-velar_approximant.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
         <!-- LATERAL APPROXIMANTS -->
         <audio id="Alveolar_lateral_approximant" controls>
             <source src="audio/Alveolar_lateral_approximant.ogg" type="audio/ogg">
@@ -1012,7 +1016,7 @@
                                 <span class='tooltiptext'>
                                     Bilabial Plosive Unvoiced Unaspirated<br>
                                     p<br>
-                                    <strong>p</strong>ay<br>
+                                    s<strong>p</strong>a<br>
                                     <strong>帮</strong> （unaspirated)
                                 </span>
 
@@ -1021,7 +1025,9 @@
 
                             <div onclick="document.getElementById('Voiceless_bilabial_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
                                 class="phoneme tooltip">
-                                <div class='chinese consonant'>pʰ</div>
+                                <div class='ipa consonant'>pʰ</div>
+                                <div class='english consonant'>p</div>
+                                <div class='chinese consonant'>p</div>
                                 <span class='tooltiptext'>
                                     Bilabial Plosive Unvoiced Aspirated<br>
                                     pʰ<br>
@@ -1060,7 +1066,7 @@
                                 <span class='tooltiptext'>
                                     Alveolar Plosive Unvoiced Unaspirated<br>
                                     t<br>
-                                    <strong>t</strong>ie<br>
+                                    s<strong>t</strong>out<br>
                                     的
 
                                 </span>
@@ -1070,10 +1076,13 @@
 
                             <div onclick="document.getElementById('Voiceless_alveolar_plosive').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
                                 class="phoneme tooltip">
-                                <div class='chinese consonant'>tʰ</div>
+                                <div class='ipa consonant'>tʰ</div>
+                                <div class='chinese consonant'>t</div>
+                                <div class='english consonant'>t</div>
                                 <span class='tooltiptext'>
                                     Alveolar Plosive Unvoiced Aspirated<br>
                                     tʰ<br>
+                                    <strong>t</strong>ie<br>
                                     听
                                 </span>
 
@@ -1091,6 +1100,20 @@
                                 </span>
 
                             </div>
+                            <div onclick="document.getElementById('Voiceless_alveolar_sibilant_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
+                                <div class='ipa consonant affricate'>t͡sʰ</div>
+                                <div class='english consonant affricate'>ts</div>
+                                <div class='chinese consonant affricate'>c</div>
+                                <span class='tooltiptext'>
+                                    Alveolar Affricate Unvoiced Unaspirated<br>
+                                    ts<br>
+                                    ca<strong>ts</strong><br>
+                                    错
+
+                                </span>
+
+                            </div>
 
                             <div onclick="document.getElementById('Voiceless_alveolar_sibilant_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
                                 class="phoneme tooltip">
@@ -1098,7 +1121,7 @@
                                 <div class='english consonant affricate'>ds</div>
                                 <div class='chinese consonant affricate'>z</div>
                                 <span class='tooltiptext'>
-                                    Alveolar Affricate Unvoiced Unaspirated<br>
+                                    Alveolar Affricate Unvoiced Aspirated<br>
                                     t͡sʰ<br>
                                     bu<strong>ds</strong><br>
                                     子
@@ -1107,20 +1130,7 @@
 
                             </div>
 
-                            <div onclick="document.getElementById('Voiceless_alveolar_sibilant_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
-                                class="phoneme tooltip">
-                                <div class='ipa consonant affricate'>t͡sʰ</div>
-                                <div class='english consonant affricate'>ts</div>
-                                <div class='chinese consonant affricate'>c</div>
-                                <span class='tooltiptext'>
-                                    Alveolar Affricate Unvoiced Aspirated<br>
-                                    ts<br>
-                                    ca<strong>ts</strong><br>
-                                    错
 
-                                </span>
-
-                            </div>
                             <div onclick="document.getElementById('Voiced_alveolar_sibilant_affricate').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
                                 class="phoneme tooltip">
                                 <div class='ipa consonant affricate'>dz</div>
@@ -2160,7 +2170,7 @@
                                 <span class='tooltiptext'>
                                     Retroflex Aproximant Voiced<br>
                                     ɻ<br>
-                                    人，肉
+                                    二，耳
 
                                 </span>
                             </div>
@@ -2204,6 +2214,17 @@
                             <div onclick="document.getElementById('Voiced_velar_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
                                 class="phoneme tooltip">
                                 <div class='ipa consonant'>ɰ</div>
+                                <span class='tooltiptext'>
+                                    Velar Aproximant Voiced<br>
+                                    ɰ<br>
+                                    <strong>w</strong>eigh<br>
+                                    我，为
+
+                                </span>
+                            </div>
+                            <div onclick="document.getElementById('Voiced_labio-velar_approximant').play(); phonemeDescription(this); activateSpeaker(); activatePhoneme(this);"
+                                class="phoneme tooltip">
+                                <div class='ipa consonant'>w</div>
                                 <div class='english consonant'>w</div>
                                 <div class='chinese consonant'>w/u</div>
                                 <span class='tooltiptext'>
@@ -2338,7 +2359,9 @@
             <!-- <hr> -->
             <i id="speaker-icon" class="fa fa-volume-up" aria-hidden="true"></i>
             <div id="phoneme-description"></div>
-            <p id="audio-attribution">Audio courtesy of <a href="https://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License,_version_1.2" target="_blank">Free Software Foundation</a></p>
+            <p id="audio-attribution">Audio courtesy of <a
+                    href="https://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License,_version_1.2"
+                    target="_blank">Free Software Foundation</a></p>
 
         </div>
 
