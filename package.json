@@ -1,0 +1,15 @@
+{
+  "name": "phoneme-chart",
+  "version": "2.0.0",
+  "description": "Interactive IPA phoneme chart with real and Azhoran constructed languages",
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --outfile=js/bundle.js --target=es2020",
+    "dev": "esbuild src/main.ts --bundle --outfile=js/bundle.js --target=es2020 --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "playwright": "^1.60.0",
+    "typescript": "^5.4.0"
+  }
+}

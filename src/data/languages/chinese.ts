@@ -1,0 +1,62 @@
+import type { Language } from '../../types';
+
+export const chinese: Language = {
+  id: 'chinese',
+  name: 'Mandarin Chinese',
+  nativeName: '普通话',
+  family: 'Sino-Tibetan',
+  region: 'China, Taiwan, Singapore',
+  type: 'real',
+  script: {
+    name: 'Chinese Characters (Hanzi)',
+    direction: 'ltr',
+    type: 'logographic',
+    description: 'Mandarin is written primarily in logographic Chinese characters (汉字 Hànzì), where each character represents a morpheme (meaning unit). Simplified characters are used in mainland China; traditional characters in Taiwan and Hong Kong. Pinyin (拼音) is the standard romanization system using Latin letters and tone marks.',
+  },
+  consonants: [
+    { ipaId: 'p', romanization: 'b (unaspirated)', nativeScript: 'b', examples: [{ word: 'bā 八', gloss: 'eight', highlight: 'b' }] },
+    { ipaId: 'b', romanization: '— (not standard)', nativeScript: '—', examples: [{ word: 'no voiced bilabial in Mandarin', gloss: '' }] },
+    { ipaId: 't', romanization: 'd (unaspirated)', nativeScript: 'd', examples: [{ word: 'dà 大', gloss: 'big', highlight: 'd' }] },
+    { ipaId: 'k', romanization: 'g (unaspirated)', nativeScript: 'g', examples: [{ word: 'gāo 高', gloss: 'tall', highlight: 'g' }] },
+    { ipaId: 'ts_vl', romanization: 'z (unaspirated)', nativeScript: 'z', examples: [{ word: 'zǐ 子', gloss: 'child / seed', highlight: 'z' }] },
+    { ipaId: 'retroflex_affricate_vl', romanization: 'zh (unaspirated)', nativeScript: 'zh', examples: [{ word: 'zhōng 中', gloss: 'center / China', highlight: 'zh' }] },
+    { ipaId: 'alveopalatal_affricate_vl', romanization: 'j (unaspirated)', nativeScript: 'j', examples: [{ word: 'jìn 进', gloss: 'enter', highlight: 'j' }] },
+    { ipaId: 'f', romanization: 'f', nativeScript: 'f', examples: [{ word: 'fēi 飞', gloss: 'fly', highlight: 'f' }] },
+    { ipaId: 's', romanization: 's', nativeScript: 's', examples: [{ word: 'sì 四', gloss: 'four', highlight: 's' }] },
+    { ipaId: 'retroflex_fric_vl', romanization: 'sh', nativeScript: 'sh', examples: [{ word: 'shān 山', gloss: 'mountain', highlight: 'sh' }] },
+    { ipaId: 'alveopalatal_fric_vl', romanization: 'x', nativeScript: 'x', examples: [{ word: 'xiǎo 小', gloss: 'small', highlight: 'x' }] },
+    { ipaId: 'x', romanization: 'h', nativeScript: 'h', examples: [{ word: 'hǎo 好', gloss: 'good', highlight: 'h' }] },
+    { ipaId: 'm', romanization: 'm', nativeScript: 'm', examples: [{ word: 'māo 猫', gloss: 'cat', highlight: 'm' }] },
+    { ipaId: 'n', romanization: 'n', nativeScript: 'n', examples: [{ word: 'nǎi 奶', gloss: 'milk', highlight: 'n' }] },
+    { ipaId: 'ng', romanization: 'ng (coda)', nativeScript: 'ng', examples: [{ word: 'wáng 王', gloss: 'king', highlight: 'ng' }] },
+    { ipaId: 'retroflex_approx', romanization: 'r', nativeScript: 'r', examples: [{ word: 'rén 人', gloss: 'person', highlight: 'r' }] },
+    { ipaId: 'l', romanization: 'l', nativeScript: 'l', examples: [{ word: 'lái 来', gloss: 'come', highlight: 'l' }] },
+    { ipaId: 'j', romanization: 'y', nativeScript: 'y', examples: [{ word: 'yī 一', gloss: 'one', highlight: 'y' }] },
+    { ipaId: 'w', romanization: 'w', nativeScript: 'w', examples: [{ word: 'wǒ 我', gloss: 'I', highlight: 'w' }] },
+  ],
+  vowels: [
+    { ipaId: 'open_front_unrounded', romanization: 'a', nativeScript: 'a', examples: [{ word: 'bā 八', gloss: 'eight', highlight: 'a' }] },
+    { ipaId: 'close_mid_front_unrounded', romanization: 'e (in -ie, -üe)', nativeScript: 'e', examples: [{ word: 'yě 也', gloss: 'also', highlight: 'e' }] },
+    { ipaId: 'close_mid_back_unrounded', romanization: 'e (standalone)', nativeScript: 'e', examples: [{ word: 'è 饿', gloss: 'hungry', highlight: 'e' }] },
+    { ipaId: 'mid_central', romanization: 'e (in -en, -eng)', nativeScript: 'e', examples: [{ word: 'gēn 根', gloss: 'root', highlight: 'e' }] },
+    { ipaId: 'close_front_unrounded', romanization: 'i', nativeScript: 'i', examples: [{ word: 'nǐ 你', gloss: 'you', highlight: 'i' }] },
+    { ipaId: 'close_front_rounded', romanization: 'ü / u (after j/q/x/y)', nativeScript: 'ü', examples: [{ word: 'yǔ 雨', gloss: 'rain', highlight: 'ü' }] },
+    { ipaId: 'close_back_rounded', romanization: 'u', nativeScript: 'u', examples: [{ word: 'tǔ 土', gloss: 'earth / soil', highlight: 'u' }] },
+    { ipaId: 'near_close_back_rounded', romanization: 'o (in -ong)', nativeScript: 'o', examples: [{ word: 'dōng 冬', gloss: 'winter', highlight: 'o' }] },
+    { ipaId: 'close_mid_back_rounded', romanization: 'o (standalone)', nativeScript: 'o', examples: [{ word: 'wǒ 我', gloss: 'I / me', highlight: 'o' }] },
+  ],
+  specialFeatures: [
+    {
+      title: 'Four tones plus neutral',
+      description: 'Standard Mandarin has four lexical tones plus a neutral tone. First tone (ˉ): high level — mā (mother). Second tone (ˊ): rising — má (hemp / numb). Third tone (ˇ): dipping — mǎ (horse). Fourth tone (ˋ): falling — mà (scold). Neutral tone (no mark): short, unstressed. These are not stress patterns — they are changes in fundamental frequency, and they are phonemically contrastive.',
+    },
+    {
+      title: 'Aspirated vs. unaspirated stops',
+      description: 'Mandarin distinguishes aspirated and unaspirated voiceless stops. The Pinyin letters p, t, k, c, ch, q represent aspirated (with a puff of air), while b, d, g, z, zh, j represent the unaspirated versions. There is no voiced/voiceless distinction as in English — both sets are voiceless, differing only in aspiration.',
+    },
+    {
+      title: 'Retroflex and alveolo-palatal series',
+      description: 'Mandarin has two series of sibilants that English conflates: retroflex (zh, ch, sh, r — tongue curled back) and alveolo-palatal (j, q, x — tongue at the palate). These are allophones in certain dialects but phonemically distinct in Standard Mandarin. The retroflex series occurs before a, e, o, u; the palatal series before i and ü.',
+    },
+  ],
+};

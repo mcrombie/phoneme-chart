@@ -1,0 +1,65 @@
+import type { Language } from '../../types';
+
+export const arabic: Language = {
+  id: 'arabic',
+  name: 'Arabic',
+  nativeName: 'العربية',
+  family: 'Afro-Asiatic › Semitic',
+  region: 'Middle East, North Africa',
+  type: 'real',
+  script: {
+    name: 'Arabic Script',
+    direction: 'rtl',
+    type: 'abjad',
+    description: 'Arabic is written right-to-left in an abjad — consonants are written, vowels are largely omitted in everyday text. Short vowels can be shown as diacritical marks (called ḥarakāt) in educational texts, religious texts, and poetry. Consonant letters connect to each other within words; most letters have four forms depending on position.',
+  },
+  consonants: [
+    { ipaId: 'b', romanization: 'b', nativeScript: 'ب', examples: [{ word: 'bayt', gloss: 'house', highlight: 'b' }] },
+    { ipaId: 't', romanization: 't', nativeScript: 'ت', examples: [{ word: 'tīn', gloss: 'figs', highlight: 't' }] },
+    { ipaId: 'theta', romanization: 'th', nativeScript: 'ث', examples: [{ word: 'thalātha', gloss: 'three', highlight: 'th' }] },
+    { ipaId: 'd', romanization: 'd', nativeScript: 'د', examples: [{ word: 'dār', gloss: 'home', highlight: 'd' }] },
+    { ipaId: 'eth', romanization: 'dh', nativeScript: 'ذ', examples: [{ word: 'dhahab', gloss: 'gold', highlight: 'dh' }] },
+    { ipaId: 'k', romanization: 'k', nativeScript: 'ك', examples: [{ word: 'kitāb', gloss: 'book', highlight: 'k' }] },
+    { ipaId: 'q', romanization: 'q', nativeScript: 'ق', examples: [{ word: 'qamar', gloss: 'moon', highlight: 'q' }] },
+    { ipaId: 'glottal_stop', romanization: 'ʾ', nativeScript: 'ء / أ', examples: [{ word: 'ʾamr', gloss: 'matter / command', highlight: 'ʾ' }] },
+    { ipaId: 'f', romanization: 'f', nativeScript: 'ف', examples: [{ word: 'fī', gloss: 'in', highlight: 'f' }] },
+    { ipaId: 's', romanization: 's', nativeScript: 'س', examples: [{ word: 'samāʾ', gloss: 'sky', highlight: 's' }] },
+    { ipaId: 'sh', romanization: 'sh', nativeScript: 'ش', examples: [{ word: 'shams', gloss: 'sun', highlight: 'sh' }] },
+    { ipaId: 'x', romanization: 'kh', nativeScript: 'خ', examples: [{ word: 'khubz', gloss: 'bread', highlight: 'kh' }] },
+    { ipaId: 'uvular_fric_vd', romanization: 'gh', nativeScript: 'غ', examples: [{ word: 'ghurfa', gloss: 'room', highlight: 'gh' }] },
+    { ipaId: 'pharyngeal_fric_vl', romanization: 'ḥ', nativeScript: 'ح', examples: [{ word: 'ḥayāt', gloss: 'life', highlight: 'ḥ' }] },
+    { ipaId: 'pharyngeal_fric_vd', romanization: 'ʕ', nativeScript: 'ع', examples: [{ word: 'ʕayn', gloss: 'eye / spring', highlight: 'ʕ' }] },
+    { ipaId: 'h', romanization: 'h', nativeScript: 'ه', examples: [{ word: 'huwwa', gloss: 'he', highlight: 'h' }] },
+    { ipaId: 'm', romanization: 'm', nativeScript: 'م', examples: [{ word: 'māʾ', gloss: 'water', highlight: 'm' }] },
+    { ipaId: 'n', romanization: 'n', nativeScript: 'ن', examples: [{ word: 'nār', gloss: 'fire', highlight: 'n' }] },
+    { ipaId: 'r', romanization: 'r', nativeScript: 'ر', examples: [{ word: 'rīḥ', gloss: 'wind', highlight: 'r' }] },
+    { ipaId: 'l', romanization: 'l', nativeScript: 'ل', examples: [{ word: 'layl', gloss: 'night', highlight: 'l' }] },
+    { ipaId: 'j', romanization: 'y', nativeScript: 'ي', examples: [{ word: 'yawm', gloss: 'day', highlight: 'y' }] },
+    { ipaId: 'w', romanization: 'w', nativeScript: 'و', examples: [{ word: 'walad', gloss: 'boy / child', highlight: 'w' }] },
+  ],
+  vowels: [
+    { ipaId: 'open_front_unrounded', romanization: 'a', nativeScript: 'َ (fatḥa)', examples: [{ word: 'kataba', gloss: 'he wrote', highlight: 'a' }] },
+    { ipaId: 'close_front_unrounded', romanization: 'ī', nativeScript: 'ي (long)', examples: [{ word: 'kīl', gloss: 'mile', highlight: 'ī' }] },
+    { ipaId: 'close_back_rounded', romanization: 'ū', nativeScript: 'و (long)', examples: [{ word: 'nūr', gloss: 'light', highlight: 'ū' }] },
+    { ipaId: 'open_mid_front_unrounded', romanization: 'i', nativeScript: 'ِ (kasra)', examples: [{ word: 'bint', gloss: 'girl', highlight: 'i' }] },
+    { ipaId: 'open_mid_back_rounded', romanization: 'u', nativeScript: 'ُ (ḍamma)', examples: [{ word: 'mudun', gloss: 'cities', highlight: 'u' }] },
+  ],
+  specialFeatures: [
+    {
+      title: 'Pharyngeal consonants',
+      description: 'Arabic has two pharyngeal fricatives — the voiceless ħ ("ḥ") and voiced ʕ ("ʕ") — produced deep in the throat where the pharynx narrows. These are entirely absent from European languages and are the consonants most difficult for speakers of those languages to acquire.',
+    },
+    {
+      title: 'Emphatic consonants',
+      description: 'Arabic has four pharyngealized ("emphatic") consonants: ṭ, ṣ, ḍ, and ẓ. These are produced with the base articulation of t/s/d/z but with the tongue root drawn back toward the pharynx simultaneously. They "darken" surrounding vowels, so /a/ near an emphatic sounds like /ɑ/ (as in "hot" in British English).',
+    },
+    {
+      title: 'Triconsonantal roots',
+      description: 'Arabic vocabulary is organized around three-consonant roots. The root k-t-b carries the semantic field of writing: kataba (he wrote), kitāb (book), kātib (writer), maktab (office). Learning a root unlocks a family of related words simultaneously.',
+    },
+    {
+      title: 'Abjad writing',
+      description: 'Standard written Arabic omits short vowels entirely. A native reader supplies them from context and root knowledge. This means the same string of consonants can represent several words — disambiguation comes from meaning and grammar, not from the letters on the page.',
+    },
+  ],
+};

@@ -1,0 +1,60 @@
+import type { Language } from '../../types';
+
+export const russian: Language = {
+  id: 'russian',
+  name: 'Russian',
+  nativeName: 'Русский',
+  family: 'Indo-European › Slavic',
+  region: 'Russia, former Soviet Union',
+  type: 'real',
+  script: {
+    name: 'Cyrillic',
+    direction: 'ltr',
+    type: 'alphabet',
+    description: 'Russian uses the Cyrillic alphabet, developed in the 9th century to write Old Church Slavonic. The Russian Cyrillic alphabet has 33 letters. Two special letters — the hard sign (ъ) and soft sign (ь) — do not represent sounds directly but modify surrounding consonants. The soft sign palatalizes the preceding consonant; the hard sign marks a morpheme boundary without palatalization.',
+  },
+  consonants: [
+    { ipaId: 'p', romanization: 'p', nativeScript: 'п', examples: [{ word: 'papa', gloss: 'father', highlight: 'p' }] },
+    { ipaId: 'b', romanization: 'b', nativeScript: 'б', examples: [{ word: 'brat', gloss: 'brother', highlight: 'b' }] },
+    { ipaId: 't', romanization: 't', nativeScript: 'т', examples: [{ word: 'tam', gloss: 'there', highlight: 't' }] },
+    { ipaId: 'd', romanization: 'd', nativeScript: 'д', examples: [{ word: 'dom', gloss: 'house', highlight: 'd' }] },
+    { ipaId: 'ts_vl', romanization: 'ts', nativeScript: 'ц', examples: [{ word: 'tsar', gloss: 'emperor', highlight: 'ts' }] },
+    { ipaId: 'tsh_vl', romanization: 'ch', nativeScript: 'ч', examples: [{ word: 'chay', gloss: 'tea', highlight: 'ch' }] },
+    { ipaId: 'k', romanization: 'k', nativeScript: 'к', examples: [{ word: 'kot', gloss: 'cat', highlight: 'k' }] },
+    { ipaId: 'g', romanization: 'g', nativeScript: 'г', examples: [{ word: 'gora', gloss: 'mountain', highlight: 'g' }] },
+    { ipaId: 'f', romanization: 'f', nativeScript: 'ф', examples: [{ word: 'fon', gloss: 'background', highlight: 'f' }] },
+    { ipaId: 'v', romanization: 'v', nativeScript: 'в', examples: [{ word: 'voda', gloss: 'water', highlight: 'v' }] },
+    { ipaId: 's', romanization: 's', nativeScript: 'с', examples: [{ word: 'syn', gloss: 'son', highlight: 's' }] },
+    { ipaId: 'z', romanization: 'z', nativeScript: 'з', examples: [{ word: 'zima', gloss: 'winter', highlight: 'z' }] },
+    { ipaId: 'sh', romanization: 'sh', nativeScript: 'ш', examples: [{ word: 'shkola', gloss: 'school', highlight: 'sh' }] },
+    { ipaId: 'zh', romanization: 'zh', nativeScript: 'ж', examples: [{ word: 'zhizn', gloss: 'life', highlight: 'zh' }] },
+    { ipaId: 'x', romanization: 'kh', nativeScript: 'х', examples: [{ word: 'khleb', gloss: 'bread', highlight: 'kh' }] },
+    { ipaId: 'm', romanization: 'm', nativeScript: 'м', examples: [{ word: 'mat', gloss: 'mother', highlight: 'm' }] },
+    { ipaId: 'n', romanization: 'n', nativeScript: 'н', examples: [{ word: 'noch', gloss: 'night', highlight: 'n' }] },
+    { ipaId: 'r', romanization: 'r', nativeScript: 'р', examples: [{ word: 'reka', gloss: 'river', highlight: 'r' }] },
+    { ipaId: 'l', romanization: 'l', nativeScript: 'л', examples: [{ word: 'les', gloss: 'forest', highlight: 'l' }] },
+    { ipaId: 'j', romanization: 'y / j', nativeScript: 'й', examples: [{ word: 'yug', gloss: 'south', highlight: 'y' }] },
+  ],
+  vowels: [
+    { ipaId: 'open_front_unrounded', romanization: 'a', nativeScript: 'а', examples: [{ word: 'tam', gloss: 'there', highlight: 'a' }] },
+    { ipaId: 'close_mid_front_unrounded', romanization: 'ye / e', nativeScript: 'е', examples: [{ word: 'net', gloss: 'no', highlight: 'e' }] },
+    { ipaId: 'close_front_unrounded', romanization: 'i', nativeScript: 'и', examples: [{ word: 'idi', gloss: 'go!', highlight: 'i' }] },
+    { ipaId: 'close_central_unrounded', romanization: 'y', nativeScript: 'ы', examples: [{ word: 'syn', gloss: 'son', highlight: 'y' }] },
+    { ipaId: 'close_mid_back_rounded', romanization: 'o', nativeScript: 'о', examples: [{ word: 'okno', gloss: 'window', highlight: 'o' }] },
+    { ipaId: 'close_back_rounded', romanization: 'u', nativeScript: 'у', examples: [{ word: 'utro', gloss: 'morning', highlight: 'u' }] },
+  ],
+  specialFeatures: [
+    {
+      title: 'Palatalization — the defining feature',
+      description: 'Nearly every Russian consonant has a "soft" (palatalized) counterpart, where the tongue simultaneously rises toward the palate. This is marked by the soft sign (ь) or by a front vowel following. The pair бrat (brother) vs. брать bryat\' (to take) differs only in whether the final т is palatalized. Russian has ~34 consonant pairs (hard/soft) that are phonemically distinct.',
+    },
+    {
+      title: 'The central vowel ы',
+      description: 'Russian has a close central unrounded vowel /ɨ/ (the letter ы) with no equivalent in most European languages. It is produced like /i/ but with the tongue further back. After consonant + soft sign, /i/ appears; after hard consonants, /ɨ/ appears. The pair мир /mir/ (peace / world) vs. мыр /mɨr/ (village commune, archaic) illustrates the distinction.',
+    },
+    {
+      title: 'Vowel reduction',
+      description: 'Unstressed vowels in Russian are significantly reduced. The letter о in an unstressed syllable is usually pronounced as /ɐ/ (near the /a/ sound). The letter е unstressed becomes /ɪ/. This means the same word sounds differently depending on which syllable is stressed — stress is lexical and must be memorized.',
+    },
+  ],
+};
