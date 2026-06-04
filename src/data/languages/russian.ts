@@ -57,4 +57,5 @@ export const russian: Language = {
       description: 'Unstressed vowels in Russian are significantly reduced. The letter о in an unstressed syllable is usually pronounced as /ɐ/ (near the /a/ sound). The letter е unstressed becomes /ɪ/. This means the same word sounds differently depending on which syllable is stressed — stress is lexical and must be memorized.',
     },
   ],
+  historicalContext: 'Russian is an East Slavic language, branching from the same Old East Slavic spoken in Kievan Rus\' (9th–13th centuries) that also gave rise to Ukrainian and Belarusian. The Moscow dialect gained prestige as the Muscovite state expanded, and by the 17th century a Moscow-based written standard was emerging. Peter the Great\'s Westernization reforms in the early 18th century replaced Church Slavonic as the literary language with a secular standard, and introduced a wave of Western European loanwords in technology, government, and science. The 1917 spelling reform after the Russian Revolution simplified the alphabet, removing four letters that had become etymological relics.',
 };

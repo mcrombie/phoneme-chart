@@ -67,4 +67,5 @@ export const french: Language = {
       description: 'Like German, standard French /r/ is realized as a voiced uvular fricative /ʁ/ — produced at the back of the mouth where the uvula meets the back of the tongue. This is quite different from Spanish or Italian /r/ and is one of the most recognizable features of the French accent.',
     },
   ],
+  historicalContext: 'French descends from Vulgar Latin, brought to Gaul by Roman conquest from the 1st century BC. The Frankish conquest in the 5th century gave the language its name but had minimal phonological impact. Old French (9th–13th centuries) developed into two dialect groups: the northern langue d\'oïl and the southern langue d\'oc (modern Occitan). The Parisian dialect, Francien, gradually became the prestige form, and the Ordinance of Villers-Cotterêts (1539) made French the sole language of royal administration. The Académie française, founded in 1635, has overseen the official standard ever since. French colonial expansion spread the language to the Americas, Africa, and Southeast Asia, and today it is spoken as an official language in over 29 countries.',
 };

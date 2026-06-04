@@ -83,7 +83,8 @@ export interface Language {
   consonants: LanguagePhoneme[];
   vowels: LanguagePhoneme[];
   specialFeatures?: SpecialFeature[];
-  worldContext?: string;  // in-universe note for conlangs
+  worldContext?: string;       // in-universe note for conlangs
+  historicalContext?: string;  // real-world linguistic history for real languages
 }
 
 // ── App state ─────────────────────────────────────────────────────────────────

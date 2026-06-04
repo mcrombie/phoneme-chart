@@ -62,4 +62,5 @@ export const arabic: Language = {
       description: 'Standard written Arabic omits short vowels entirely. A native reader supplies them from context and root knowledge. This means the same string of consonants can represent several words — disambiguation comes from meaning and grammar, not from the letters on the page.',
     },
   ],
+  historicalContext: 'Arabic belongs to the Semitic branch of the Afro-Asiatic family, a group that includes Hebrew, Amharic, and the ancient languages Akkadian and Phoenician. Classical Arabic was codified through the pre-Islamic poetic tradition and then fixed by the text of the Quran (7th century AD), giving the written language extraordinary stability over fourteen centuries. Modern Standard Arabic (MSA) is a modernized form of Classical Arabic used in formal writing and broadcast media across the Arab world. The spoken vernaculars — Egyptian, Levantine, Moroccan, and others — diverge considerably from MSA and from each other, to the point of limited mutual intelligibility at the extremes.',
 };

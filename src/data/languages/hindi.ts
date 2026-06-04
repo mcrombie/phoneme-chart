@@ -63,4 +63,5 @@ export const hindi: Language = {
       description: 'Each Devanagari consonant carries an inherent /a/ sound unless modified. A vowel diacritic replaces the inherent vowel: क = ka, कि = ki, को = ko. The virāma mark (्) silences the inherent vowel for consonant clusters: क्त = kta (written kt).',
     },
   ],
+  historicalContext: 'Hindi descends from Sanskrit via the Prakrits — the vernacular dialects of ancient India — and the later Apabhramsha stage. The modern standard is based on the Khari Boli dialect spoken around Delhi and the western Gangetic Plain. Hindi and Urdu are essentially the same spoken language (Hindustani), diverging mainly in their literary registers: Hindi draws formal vocabulary from Sanskrit, while Urdu draws from Persian and Arabic. Standard Hindi was codified in the 19th and early 20th centuries alongside the independence movement, and after 1947 it became one of the official languages of India. The Devanagari script used for Hindi is also the writing system for Sanskrit, Marathi, and Nepali.',
 };

@@ -61,4 +61,5 @@ export const english: Language = {
       description: 'English does not use vowel length as a phoneme — the distinction between "long" and "short" vowels in English spelling refers to vowel quality, not duration.',
     },
   ],
+  historicalContext: 'English descends from West Germanic dialects brought to Britain by Anglo-Saxon settlers in the 5th–7th centuries. Viking settlement introduced heavy Norse influence, and the Norman Conquest of 1066 flooded the language with French vocabulary, giving English its characteristic layer of Latinate synonyms alongside Germanic ones (ask/inquire, begin/commence). The Great Vowel Shift (c. 1400–1700) dramatically changed pronunciation while spelling remained largely fixed, explaining many of the mismatches between written and spoken English today. Further borrowing from Latin, Greek, and eventually languages worldwide has made English\'s lexicon one of the largest of any language.',
 };

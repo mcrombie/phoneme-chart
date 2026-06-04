@@ -59,4 +59,5 @@ export const japanese: Language = {
       description: 'Japanese has fewer consonant phonemes than almost any other major language — no voiced fricatives except /z/, no /θ/, no /v/ natively, no /l/. This simplicity is counterbalanced by a complex morphology and the three-script writing system.',
     },
   ],
+  historicalContext: 'Japanese belongs to the Japonic family and has no confirmed relatives beyond its close sister Ryukyuan. Sustained contact with China from the 5th century onward brought massive Chinese influence: Chinese characters (kanji) were adopted to write the language, along with thousands of Sino-Japanese vocabulary items that still coexist with native Japanese words. The two syllabaries, hiragana and katakana, were developed in the 9th century as phonetic complements to kanji. A second major wave of foreign borrowing followed Japan\'s opening to the West in the Meiji era (1868), and English loanwords (gairaigo) have continued accumulating through the 20th and 21st centuries, now numbering in the tens of thousands.',
 };

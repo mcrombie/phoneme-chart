@@ -50,4 +50,5 @@ export const spanish: Language = {
       description: 'Castilian Spanish uses the voiceless dental fricative /θ/ for the letters "c" (before e/i) and "z". Latin American and Andalusian Spanish merge these to /s/ — a feature called "seseo." Both are standard in their regions.',
     },
   ],
+  historicalContext: 'Spanish descends from Vulgar Latin, brought to the Iberian Peninsula by Roman soldiers and settlers from the 3rd century BC onward. The Visigoths\' Germanic influence was phonologically light, but the Moorish period (711–1492 AD) left a rich Arabic substrate — around 4,000 Spanish words derive from Arabic, including álgebra, alcohol, azúcar, and many place names. The modern standard is based on Castilian, the dialect that emerged from the Christian kingdoms of northern Iberia and spread south with the Reconquista. Spanish also absorbed thousands of words from Nahuatl, Quechua, and other indigenous American languages following the 16th-century colonial expansion.',
 };

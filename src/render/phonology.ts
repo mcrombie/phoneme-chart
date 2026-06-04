@@ -215,6 +215,19 @@ export function renderPhonologyView(lang: Language): HTMLElement {
     view.appendChild(specialFeaturesSection(lang.specialFeatures));
   }
 
+  // Historical context (real languages only)
+  if (lang.historicalContext) {
+    const section = document.createElement('section');
+    section.className = 'phon-section context-section';
+    const h = document.createElement('h3');
+    h.textContent = 'Historical Context';
+    section.appendChild(h);
+    const p = document.createElement('p');
+    p.textContent = lang.historicalContext;
+    section.appendChild(p);
+    view.appendChild(section);
+  }
+
   // World context (conlangs only)
   if (lang.worldContext) {
     const section = document.createElement('section');

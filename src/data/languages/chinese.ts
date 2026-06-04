@@ -59,4 +59,5 @@ export const chinese: Language = {
       description: 'Mandarin has two series of sibilants that English conflates: retroflex (zh, ch, sh, r — tongue curled back) and alveolo-palatal (j, q, x — tongue at the palate). These are allophones in certain dialects but phonemically distinct in Standard Mandarin. The retroflex series occurs before a, e, o, u; the palatal series before i and ü.',
     },
   ],
+  historicalContext: 'Chinese is attested for over 3,000 years, with the earliest written records found on oracle bones from the Shang dynasty (c. 1250 BC). Classical Chinese, the written literary standard, remained largely unchanged for two millennia while spoken dialects diverged. Mandarin is based on the dialect of the Beijing region, which became the prestige variety during the Ming and Qing dynasties — the term "Mandarin" derives from a Portuguese adaptation of the Malay word for a Chinese official. Modern Standard Chinese (Pǔtōnghuà) was formally codified in the 20th century and promotes the Beijing phonology as the national standard. The Pinyin romanization system was standardized in 1958 to aid literacy and foreign-language learning.',
 };

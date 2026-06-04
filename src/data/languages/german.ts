@@ -64,4 +64,5 @@ export const german: Language = {
       description: 'All voiced obstruents (b, d, g, v, z) become voiceless at the end of a syllable. "Rad" (wheel, /d/ at end) is pronounced /rat/. When a suffix follows: "Räder" (wheels) restores the /d/. This explains otherwise puzzling spelling/pronunciation pairs.',
     },
   ],
+  historicalContext: 'German is a West Germanic language whose defining sound change is the High German Consonant Shift (c. 500–700 AD), which systematically shifted stops — turning /p/ to /ff/ or /pf/, /t/ to /ss/ or /z/, and /k/ to /x/ in certain positions. This is what separates High German from Low German, Dutch, and English (compare German machen with English make, or German Wasser with English water). The modern written standard owes much to Martin Luther\'s Bible translation (1522–1534), which drew on a broadly intelligible East Central German to reach the widest possible audience. German spelling was last formally reformed in 1996, reducing some of the more irregular uses of ß.',
 };
